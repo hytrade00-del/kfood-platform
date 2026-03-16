@@ -26,8 +26,44 @@ import {
 import { motion, AnimatePresence } from 'framer-motion';
 import recipesData from './data/recipes.json';
 
+const DisqusComments = ({ recipeId }) => {
+  useEffect(() => {
+    const pageUrl = `https://www.kfood-platform.com/recipe/${recipeId}`;
+    const pageIdentifier = recipeId;
+
+    if (window.DISQUS) {
+      window.DISQUS.reset({
+        reload: true,
+        config: function () {
+          this.page.url = pageUrl;
+          this.page.identifier = pageIdentifier;
+        }
+      });
+    } else {
+      window.disqus_config = function () {
+        this.page.url = pageUrl;
+        this.page.identifier = pageIdentifier;
+      };
+      const d = document, s = d.createElement('script');
+      s.src = 'https://k-food-global.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  }, [recipeId]);
+
+  return (
+    <>
+      <div id="disqus_thread"></div>
+      <noscript>
+        Please enable JavaScript to view the{' '}
+        <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+      </noscript>
+    </>
+  );
+};
+
 const App = () => {
-  const [activeTab, setActiveTab] = useState('recipes'); // 'recipes' or 'substitutes'
+  const [activeTab, setActiveTab] = useState('recipes'); // 'recipes', 'substitutes', or 'about'
   const [selectedRecipeId, setSelectedRecipeId] = useState(""); // EMPTY by default to show catalog
   const [servings, setServings] = useState(2);
   const [isMetric, setIsMetric] = useState(true);
@@ -35,15 +71,7 @@ const App = () => {
   const [email, setEmail] = useState("");
   const [showPrivacy, setShowPrivacy] = useState(false);
   const [showContact, setShowContact] = useState(false);
-  const [commentsByRecipe, setCommentsByRecipe] = useState({
-    "kimchi-jjigae": [
-      { user: "John Doe", text: "The substitute for Gochugaru worked surprisingly well!", date: "2 days ago" }
-    ],
-    "bulgogi": [
-      { user: "Sarah K.", text: "Adding pear juice really makes a difference!", date: "1 week ago" }
-    ]
-  });
-  const [newComment, setNewComment] = useState("");
+
 
   const recipe = useMemo(() =>
     recipesData.find(r => r.id === selectedRecipeId) || null
@@ -54,6 +82,95 @@ const App = () => {
       setServings(recipe.servings);
     }
   }, [recipe?.id]);
+
+  // Handle Initial Route and Back/Forward Navigation
+  useEffect(() => {
+    const handleLocation = () => {
+      const path = window.location.pathname;
+      if (path.startsWith('/recipe/')) {
+        const id = path.replace('/recipe/', '');
+        const exists = recipesData.some(r => r.id === id);
+        if (exists) {
+          setActiveTab('recipes');
+          setSelectedRecipeId(id);
+        } else {
+          setActiveTab('recipes');
+          setSelectedRecipeId("");
+        }
+      } else if (path === '/substitutes') {
+        setActiveTab('substitutes');
+        setSelectedRecipeId("");
+      } else if (path === '/about') {
+        setActiveTab('about');
+        setSelectedRecipeId("");
+      } else if (path === '/privacy') {
+        setActiveTab('recipes');
+        setSelectedRecipeId("");
+        setShowPrivacy(true);
+      } else {
+        setActiveTab('recipes');
+        setSelectedRecipeId("");
+      }
+    };
+
+    handleLocation();
+    window.addEventListener('popstate', handleLocation);
+    return () => window.removeEventListener('popstate', handleLocation);
+  }, []);
+
+  // Update URL and SEO Meta Tags
+  useEffect(() => {
+    const metaDesc = document.querySelector('meta[name="description"]');
+    const canonical = document.querySelector('link[rel="canonical"]');
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    const ogDesc = document.querySelector('meta[property="og:description"]');
+    const ogUrl = document.querySelector('meta[property="og:url"]');
+    const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+    const twitterDesc = document.querySelector('meta[name="twitter:description"]');
+
+    let title = "";
+    let desc = "";
+    let urlPath = "/";
+
+    if (recipe) {
+      title = `${recipe.title} Recipe | K-Food Global`;
+      desc = `Learn how to make authentic ${recipe.title}. Step-by-step recipe with ingredient substitutes for home cooks worldwide.`;
+      urlPath = `/recipe/${recipe.id}`;
+    } else if (activeTab === 'about') {
+      title = 'About Us | K-Food Global';
+      desc = 'K-Food Global is a platform dedicated to helping home cooks worldwide discover and master authentic Korean recipes with easy ingredient substitutes.';
+      urlPath = '/about';
+    } else if (activeTab === 'substitutes') {
+      title = 'Ingredient Substitutes Board | K-Food Global';
+      desc = 'Find smart Korean ingredient substitutes. Compare costs and taste match scores to cook authentic Korean food with local supermarket ingredients.';
+      urlPath = '/substitutes';
+    } else if (showPrivacy) {
+      title = 'Privacy Policy | K-Food Global';
+      desc = 'Read our privacy policy to understand how K-Food Global handles your information.';
+      urlPath = '/privacy';
+    } else {
+      title = 'K-Food Global | Authentic Korean Recipes for Home Cooks Worldwide';
+      desc = 'Discover authentic Korean recipes with smart ingredient substitutes. Cook Kimchi Jjigae, Bulgogi, Bibimbap and more — with local supermarket alternatives that taste just as good.';
+      urlPath = '/';
+    }
+
+    const fullUrl = `https://www.kfood-platform.com${urlPath}`;
+
+    document.title = title;
+    if (metaDesc) metaDesc.setAttribute('content', desc);
+    if (canonical) canonical.setAttribute('href', fullUrl);
+    if (ogTitle) ogTitle.setAttribute('content', title);
+    if (ogDesc) ogDesc.setAttribute('content', desc);
+    if (ogUrl) ogUrl.setAttribute('content', fullUrl);
+    if (twitterTitle) twitterTitle.setAttribute('content', title);
+    if (twitterDesc) twitterDesc.setAttribute('content', desc);
+
+    // Only push if different from current path
+    if (window.location.pathname !== urlPath) {
+      window.history.pushState(null, '', urlPath);
+    }
+  }, [recipe, activeTab, showPrivacy]);
+
 
   const filteredRecipes = useMemo(() => {
     if (!searchTerm) return recipesData;
@@ -137,17 +254,6 @@ const App = () => {
     alert("Shopping list categorized and copied to clipboard! 📋");
   };
 
-  const handlePostComment = () => {
-    if (!newComment.trim() || !recipe) return;
-    const recipeId = recipe.id;
-    const currentComments = commentsByRecipe[recipeId] || [];
-    setCommentsByRecipe({
-      ...commentsByRecipe,
-      [recipeId]: [...currentComments, { user: "Global Foodie", text: newComment, date: "Just now" }]
-    });
-    setNewComment("");
-  };
-
   const getPantryInfo = (level) => {
     const levels = {
       1: { label: "Level 1: The Explorer", desc: "Local mart ingredients only!", color: "#3498db" },
@@ -159,26 +265,33 @@ const App = () => {
 
   return (
     <div className="app">
-      <header className="no-print">
-        <div className="container nav-content">
-          <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-            <a href="#" className="logo" onClick={() => { setActiveTab('recipes'); setSelectedRecipeId(""); setSearchTerm(""); }}>
-              🍳 K-FOOD GLOBAL
-            </a>
-            <nav className="main-nav">
-              <button className={activeTab === 'recipes' ? 'active' : ''} onClick={() => { setActiveTab('recipes'); setSelectedRecipeId(""); }}>Recipes</button>
-              <button className={activeTab === 'substitutes' ? 'active' : ''} onClick={() => setActiveTab('substitutes')}>Substitutes Board</button>
-            </nav>
+      <header className="no-print" style={{ padding: '1.5rem 0' }}>
+        <div className="container" style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+          <div className="nav-top-row" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '30px' }}>
+              <a href="/" className="logo" onClick={(e) => { e.preventDefault(); setActiveTab('recipes'); setSelectedRecipeId(""); setSearchTerm(""); window.history.pushState(null, '', '/'); }}>
+                🍳 K-FOOD GLOBAL
+              </a>
+              <nav className="main-nav">
+                <button className={activeTab === 'recipes' ? 'active' : ''} onClick={() => { setActiveTab('recipes'); setSelectedRecipeId(""); window.history.pushState(null, '', '/'); }}>Recipes</button>
+                <button className={activeTab === 'substitutes' ? 'active' : ''} onClick={() => { setActiveTab('substitutes'); setSelectedRecipeId(""); window.history.pushState(null, '', '/substitutes'); }}>Substitutes Board</button>
+                <button className={activeTab === 'about' ? 'active' : ''} onClick={() => { setActiveTab('about'); setSelectedRecipeId(""); window.history.pushState(null, '', '/about'); }}>About</button>
+              </nav>
+            </div>
           </div>
-          <div className="search-wrapper" style={{ position: 'relative', flex: 1, maxWidth: '400px', marginLeft: '20px' }}>
-            <div className="search-bar">
-              <Search size={18} color="#888" />
-              <input
-                type="text"
-                placeholder="Search recipes..."
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-              />
+
+          <div className="search-row" style={{ display: 'flex', justifyContent: 'center' }}>
+            <div className="search-wrapper" style={{ position: 'relative', width: '100%', maxWidth: '600px' }}>
+              <div className="search-bar" style={{ padding: '12px 20px', borderRadius: '30px', border: '1px solid rgba(0,0,0,0.1)' }}>
+                <Search size={20} color="var(--primary)" />
+                <input
+                  type="text"
+                  placeholder="What ingredients do you have? We'll find the perfect recipe for you."
+                  value={searchTerm}
+                  style={{ fontSize: '1rem', fontWeight: '500' }}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -260,7 +373,10 @@ const App = () => {
                 </section>
 
                 <section id="ingredients">
-                  <h2 className="section-title"><CheckCircle2 color="var(--primary)" /> Ingredients</h2>
+                  <div style={{ display: 'flex', alignItems: 'baseline', gap: '12px', flexWrap: 'wrap' }}>
+                    <h2 className="section-title" style={{ marginBottom: 0 }}><CheckCircle2 color="var(--primary)" /> Ingredients</h2>
+                    <span style={{ fontSize: '0.7rem', color: '#999', fontStyle: 'italic' }}>As an Amazon Associate I earn from qualifying purchases.</span>
+                  </div>
                   <div className="ingredients-grid">
                     {recipe.ingredients?.map((ing, idx) => (
                       <div key={idx} className="ingredient-card">
@@ -317,39 +433,20 @@ const App = () => {
                 <section className="comments no-print">
                   <h2 className="section-title"><MessageSquare color="var(--primary)" /> Recipe Comments</h2>
                   <div className="comments-box">
-                    {(commentsByRecipe[recipe.id] || []).map((c, idx) => (
-                      <div key={idx} className="comment-item">
-                        <div className="comment-avatar">{c.user[0]}</div>
-                        <div className="comment-body">
-                          <div className="comment-header">{c.user} <small>• {c.date}</small></div>
-                          <p>{c.text}</p>
-                        </div>
-                      </div>
-                    ))}
-                    <div style={{ marginTop: '20px' }}>
-                      <textarea
-                        value={newComment}
-                        onChange={(e) => setNewComment(e.target.value)}
-                        placeholder="Ask a question about this recipe!"
-                        style={{ width: '100%', padding: '15.px', borderRadius: '12px', border: '1px solid #ddd', minHeight: '100px', marginBottom: '15px' }}
-                      />
-                      <div style={{ textAlign: 'right' }}>
-                        <button className="signup-btn" onClick={handlePostComment}>Post Comment</button>
-                      </div>
-                    </div>
+                    <DisqusComments recipeId={recipe.id} />
                   </div>
                 </section>
               </>
             )}
           </>
-        ) : (
+        ) : activeTab === 'substitutes' ? (
           <section className="substitutes-board">
             <h1 className="section-title"><ArrowRightLeft size={32} color="var(--primary)" /> Substitutes Efficiency Board</h1>
             <p style={{ marginBottom: '3rem', color: '#666' }}>Stop overpaying at specialty stores. Here is why and how we hack the authentic taste for half the price.</p>
 
             <div className="sub-grid">
               {recipesData.flatMap(r => r.ingredients.filter(i => i.substitute)).map((ing, idx) => (
-                <motion.div key={idx} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: idx * 0.1 }} className="sub-card">
+                <motion.div key={idx} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: idx * 0.05 }} className="sub-card">
                   <div className="sub-header">
                     <div className="sub-pair">
                       <span className="orig-ing">{ing.name}</span>
@@ -378,6 +475,64 @@ const App = () => {
               ))}
             </div>
           </section>
+        ) : (
+          /* ===== ABOUT PAGE ===== */
+          <section className="about-page" style={{ padding: '4rem 0', maxWidth: '800px', margin: '0 auto' }}>
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+              <h1 className="section-title" style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>About K-Food Global</h1>
+              <p style={{ color: 'var(--primary)', fontWeight: 700, marginBottom: '3rem', fontSize: '1.1rem' }}>Making authentic Korean cuisine accessible to everyone, everywhere.</p>
+
+              <div style={{ background: 'white', borderRadius: '20px', padding: '2.5rem', boxShadow: 'var(--shadow)', marginBottom: '2rem' }}>
+                <h2 style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--primary)' }}>🍳 Our Mission</h2>
+                <p style={{ lineHeight: 1.9, color: '#444', marginBottom: '1rem' }}>
+                  Korean food is one of the world's most exciting and flavorful cuisines — but for home cooks outside Korea, finding authentic ingredients can be a real challenge. Specialty K-mart ingredients are often expensive, hard to find, or simply unavailable.
+                </p>
+                <p style={{ lineHeight: 1.9, color: '#444' }}>
+                  <strong>K-Food Global</strong> was built to solve this problem. We provide authentic Korean recipes alongside carefully researched ingredient substitutes that you can find at your local supermarket — without sacrificing the real taste.
+                </p>
+              </div>
+
+              <div style={{ background: 'white', borderRadius: '20px', padding: '2.5rem', boxShadow: 'var(--shadow)', marginBottom: '2rem' }}>
+                <h2 style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--primary)' }}>🌍 Who We Are</h2>
+                <p style={{ lineHeight: 1.9, color: '#444', marginBottom: '1rem' }}>
+                  We are a team of Korean food enthusiasts and home cooks who have lived and cooked in various countries around the world. Through years of experimentation, we've developed a deep understanding of which ingredient swaps work — and which don't.
+                </p>
+                <p style={{ lineHeight: 1.9, color: '#444' }}>
+                  Our substitution recommendations come from real cooking experience, taste tests with actual home cooks, and research from food science communities. Every substitute on our platform has been rated for taste similarity and cost savings.
+                </p>
+              </div>
+
+              <div style={{ background: 'white', borderRadius: '20px', padding: '2.5rem', boxShadow: 'var(--shadow)', marginBottom: '2rem' }}>
+                <h2 style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--primary)' }}>📊 What You'll Find Here</h2>
+                <ul style={{ lineHeight: 2, color: '#444', paddingLeft: '1.5rem' }}>
+                  <li><strong>{recipesData.length}+ authentic Korean recipes</strong> — from everyday home cooking to special occasion dishes</li>
+                  <li><strong>Smart ingredient substitutes</strong> — with taste match scores and cost comparisons</li>
+                  <li><strong>Pantry level system</strong> — recipes rated by how much Korean-specific pantry you need (Level 1–3)</li>
+                  <li><strong>Metric & US unit support</strong> — automatic unit conversion for all ingredients</li>
+                  <li><strong>Serving size scaling</strong> — adjust every recipe to your household size</li>
+                  <li><strong>Kitchen tool alternatives</strong> — what to use if you don't have Korean cookware</li>
+                </ul>
+              </div>
+
+              <div style={{ background: 'white', borderRadius: '20px', padding: '2.5rem', boxShadow: 'var(--shadow)', marginBottom: '2rem' }}>
+                <h2 style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--primary)' }}>🤝 Transparency & Affiliates</h2>
+                <p style={{ lineHeight: 1.9, color: '#444', marginBottom: '1rem' }}>
+                  Some ingredient cards on this site contain affiliate links to Amazon. As an Amazon Associate, we earn a small commission when you purchase through these links — at no extra cost to you. This helps us keep the platform free and continue adding new recipes.
+                </p>
+                <p style={{ lineHeight: 1.9, color: '#444' }}>
+                  We only link to products we genuinely recommend. Our substitution advice is never influenced by affiliate relationships.
+                </p>
+              </div>
+
+              <div style={{ background: 'linear-gradient(135deg, #ec4913 0%, #f97316 100%)', borderRadius: '20px', padding: '2.5rem', color: 'white', textAlign: 'center' }}>
+                <h2 style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '1rem' }}>📬 Get in Touch</h2>
+                <p style={{ lineHeight: 1.8, marginBottom: '1.5rem', opacity: 0.9 }}>
+                  Have a recipe request? Found an error? We'd love to hear from you.
+                </p>
+                <a href="mailto:hytrade00@gmail.com" style={{ display: 'inline-block', background: 'white', color: 'var(--primary)', padding: '12px 30px', borderRadius: '30px', textDecoration: 'none', fontWeight: 700, fontSize: '1.1rem' }}>hytrade00@gmail.com</a>
+              </div>
+            </motion.div>
+          </section>
         )}
       </main>
 
@@ -386,9 +541,9 @@ const App = () => {
           <div className="footer-content">
             <div className="logo">🍳 K-FOOD</div>
             <div className="footer-links">
-              <a href="#" onClick={(e) => { e.preventDefault(); setShowPrivacy(true); }}>Privacy</a>
-              <a href="#">Affiliates</a>
-              <a href="#" onClick={(e) => { e.preventDefault(); setShowContact(true); }}>Contact</a>
+              <a href="/privacy" onClick={(e) => { e.preventDefault(); setShowPrivacy(true); window.history.pushState(null, '', '/privacy'); }}>Privacy</a>
+              <a href="/affiliates">Affiliates</a>
+              <a href="/contact" onClick={(e) => { e.preventDefault(); setShowContact(true); }}>Contact</a>
             </div>
           </div>
           <p>© 2026 K-FOOD GLOBAL</p>
@@ -402,7 +557,7 @@ const App = () => {
             <motion.div initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.9, opacity: 0 }} onClick={(e) => e.stopPropagation()} style={{ background: 'white', borderRadius: '20px', padding: '2.5rem', maxWidth: '600px', width: '100%', maxHeight: '80vh', overflowY: 'auto', boxShadow: '0 25px 50px rgba(0,0,0,0.25)' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
                 <h2 style={{ fontSize: '1.5rem', fontWeight: 700 }}>Privacy Policy</h2>
-                <button onClick={() => setShowPrivacy(false)} style={{ background: 'none', border: 'none', fontSize: '1.5rem', cursor: 'pointer', color: '#999' }}>✕</button>
+                <button onClick={() => { setShowPrivacy(false); window.history.back(); }} style={{ background: 'none', border: 'none', fontSize: '1.5rem', cursor: 'pointer', color: '#999' }}>✕</button>
               </div>
               <div style={{ lineHeight: 1.8, color: '#444', fontSize: '0.95rem' }}>
                 <p style={{ marginBottom: '1rem' }}><strong>Last updated:</strong> February 2026</p>

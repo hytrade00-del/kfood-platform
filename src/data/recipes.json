@@ -1998,6 +1998,66 @@
                 "subPrice": 8.0,
                 "similarityScore": 75,
                 "amazonLink": null
+            },
+            {
+                "name": "Garlic (minced)",
+                "category": "Local Mart",
+                "amount": 2,
+                "unit": "cloves",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.3,
+                "subPrice": 0.3,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Beef Broth",
+                "category": "Local Mart",
+                "amount": 500,
+                "unit": "ml",
+                "substitute": "Vegetable broth",
+                "subReason": "Vegetable broth provides a clean, savory base that works well with the doenjang.",
+                "origPrice": 2.0,
+                "subPrice": 1.5,
+                "similarityScore": 80,
+                "amazonLink": null
+            },
+            {
+                "name": "Soy Sauce",
+                "category": "Local Mart",
+                "amount": 1,
+                "unit": "tbsp",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.5,
+                "subPrice": 0.5,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Perilla Powder (Deulkkae)",
+                "category": "Korean Mart",
+                "amount": 1,
+                "unit": "tbsp",
+                "substitute": "Ground sesame seeds",
+                "subReason": "Ground sesame seeds offer a similar nutty, toasty aroma and thickening effect in the soup.",
+                "origPrice": 4.0,
+                "subPrice": 1.0,
+                "similarityScore": 70,
+                "amazonLink": "https://www.amazon.com/s?k=korean+perilla+powder+deulkkae"
+            },
+            {
+                "name": "Leeks (chopped)",
+                "category": "Local Mart",
+                "amount": 1,
+                "unit": "stalk",
+                "substitute": "Green onions",
+                "subReason": "Green onions provide a similar mild onion flavor with a slightly sharper note.",
+                "origPrice": 0.8,
+                "subPrice": 0.5,
+                "similarityScore": 85,
+                "amazonLink": null
             }
         ],
         "tools": [
@@ -2071,6 +2131,90 @@
                 "origPrice": 4.0,
                 "subPrice": 3.5,
                 "similarityScore": 85,
+                "amazonLink": null
+            },
+            {
+                "name": "Garlic (minced)",
+                "category": "Local Mart",
+                "amount": 3,
+                "unit": "cloves",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.4,
+                "subPrice": 0.4,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Chili Oil",
+                "category": "Local Mart",
+                "amount": 1,
+                "unit": "tbsp",
+                "substitute": "Sesame oil + pinch of cayenne",
+                "subReason": "Sesame oil mixed with a pinch of cayenne replicates the fragrant heat of chili oil.",
+                "origPrice": 3.0,
+                "subPrice": 1.5,
+                "similarityScore": 78,
+                "amazonLink": null
+            },
+            {
+                "name": "Anchovy or Clam Broth",
+                "category": "Local Mart",
+                "amount": 300,
+                "unit": "ml",
+                "substitute": "Low-sodium chicken broth",
+                "subReason": "Chicken broth provides a neutral savory base. Add a dash of fish sauce to replicate the seafood umami.",
+                "origPrice": 2.0,
+                "subPrice": 1.5,
+                "similarityScore": 75,
+                "amazonLink": null
+            },
+            {
+                "name": "Zucchini (sliced)",
+                "category": "Local Mart",
+                "amount": 50,
+                "unit": "g",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.5,
+                "subPrice": 0.5,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Onion (sliced)",
+                "category": "Local Mart",
+                "amount": 30,
+                "unit": "g",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.3,
+                "subPrice": 0.3,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Egg",
+                "category": "Local Mart",
+                "amount": 1,
+                "unit": "pc",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.3,
+                "subPrice": 0.3,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Green Onion (chopped)",
+                "category": "Local Mart",
+                "amount": 1,
+                "unit": "stalk",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.3,
+                "subPrice": 0.3,
+                "similarityScore": null,
                 "amazonLink": null
             }
         ],
@@ -2146,6 +2290,66 @@
                 "subPrice": 4.0,
                 "similarityScore": 95,
                 "amazonLink": null
+            },
+            {
+                "name": "Garlic (minced)",
+                "category": "Local Mart",
+                "amount": 3,
+                "unit": "cloves",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.4,
+                "subPrice": 0.4,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Cooking Oil",
+                "category": "Local Mart",
+                "amount": 2,
+                "unit": "tbsp",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.5,
+                "subPrice": 0.5,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Water",
+                "category": "Local Mart",
+                "amount": 3,
+                "unit": "tbsp",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.0,
+                "subPrice": 0.0,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Sesame Oil",
+                "category": "Local Mart",
+                "amount": 1,
+                "unit": "tbsp",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 1.0,
+                "subPrice": 1.0,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Sesame Seeds",
+                "category": "Local Mart",
+                "amount": 1,
+                "unit": "tbsp",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.5,
+                "subPrice": 0.5,
+                "similarityScore": null,
+                "amazonLink": null
             }
         ],
         "tools": [
@@ -2220,6 +2424,78 @@
                 "subPrice": 2.0,
                 "similarityScore": 85,
                 "amazonLink": null
+            },
+            {
+                "name": "Sesame Oil",
+                "category": "Local Mart",
+                "amount": 1,
+                "unit": "tbsp",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 1.0,
+                "subPrice": 1.0,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Garlic (minced)",
+                "category": "Local Mart",
+                "amount": 3,
+                "unit": "cloves",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.4,
+                "subPrice": 0.4,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Salted Shrimp (Saeujeot)",
+                "category": "Korean Mart",
+                "amount": 1,
+                "unit": "tbsp",
+                "substitute": "Fish sauce + a pinch of salt",
+                "subReason": "Saeujeot adds a deep, briny umami. Fish sauce provides a similar fermented seafood punch — use half the quantity as it's more concentrated.",
+                "origPrice": 4.0,
+                "subPrice": 1.5,
+                "similarityScore": 78,
+                "amazonLink": "https://www.amazon.com/s?k=korean+salted+shrimp+saeujeot"
+            },
+            {
+                "name": "Eggs",
+                "category": "Local Mart",
+                "amount": 2,
+                "unit": "pcs",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.6,
+                "subPrice": 0.6,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Cooked Short-Grain Rice",
+                "category": "Local Mart",
+                "amount": 300,
+                "unit": "g",
+                "substitute": "Japanese sushi rice",
+                "subReason": "Any short-grain sticky rice will work. Long-grain rice won't absorb the soup as well.",
+                "origPrice": 1.5,
+                "subPrice": 1.5,
+                "similarityScore": 95,
+                "amazonLink": null
+            },
+            {
+                "name": "Dried Seaweed Flakes (Gim-garu)",
+                "category": "Korean Mart",
+                "amount": 1,
+                "unit": "tbsp",
+                "substitute": "Crushed toasted nori sheets",
+                "subReason": "Regular Japanese nori (seaweed) toasted and crumbled is an excellent substitute with virtually identical flavor.",
+                "origPrice": 3.0,
+                "subPrice": 2.0,
+                "similarityScore": 92,
+                "amazonLink": "https://www.amazon.com/s?k=korean+seaweed+flakes+gim"
             }
         ],
         "tools": [
@@ -2294,6 +2570,126 @@
                 "subPrice": 1.0,
                 "similarityScore": 70,
                 "amazonLink": null
+            },
+            {
+                "name": "Soy Sauce",
+                "category": "Local Mart",
+                "amount": 5,
+                "unit": "tbsp",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 1.0,
+                "subPrice": 1.0,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Sugar",
+                "category": "Local Mart",
+                "amount": 2,
+                "unit": "tbsp",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.3,
+                "subPrice": 0.3,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Corn Syrup (Mulyeot)",
+                "category": "Korean Mart",
+                "amount": 3,
+                "unit": "tbsp",
+                "substitute": "Honey or light corn syrup",
+                "subReason": "Mulyeot adds a glossy sheen to the sauce. Regular corn syrup or honey works well as a substitute — use the same quantity.",
+                "origPrice": 3.5,
+                "subPrice": 2.0,
+                "similarityScore": 88,
+                "amazonLink": "https://www.amazon.com/s?k=korean+corn+syrup+mulyeot"
+            },
+            {
+                "name": "Carrots",
+                "category": "Local Mart",
+                "amount": 2,
+                "unit": "pcs",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 1.0,
+                "subPrice": 1.0,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Shiitake Mushrooms",
+                "category": "Local Mart",
+                "amount": 100,
+                "unit": "g",
+                "substitute": "Cremini or button mushrooms",
+                "subReason": "Any mushroom works — shiitake adds a deeper umami flavor but cremini or button mushrooms are excellent substitutes.",
+                "origPrice": 3.5,
+                "subPrice": 2.0,
+                "similarityScore": 80,
+                "amazonLink": null
+            },
+            {
+                "name": "Onion",
+                "category": "Local Mart",
+                "amount": 1,
+                "unit": "pc",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.8,
+                "subPrice": 0.8,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Green Chili Peppers",
+                "category": "Local Mart",
+                "amount": 2,
+                "unit": "pcs",
+                "substitute": "Jalapeño peppers",
+                "subReason": "Korean green chili has a mild to medium heat. Jalapeños are thicker but provide a similar level of heat and color.",
+                "origPrice": 0.5,
+                "subPrice": 0.5,
+                "similarityScore": 80,
+                "amazonLink": null
+            },
+            {
+                "name": "Garlic (minced)",
+                "category": "Local Mart",
+                "amount": 4,
+                "unit": "cloves",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.5,
+                "subPrice": 0.5,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Ginger (sliced)",
+                "category": "Local Mart",
+                "amount": 5,
+                "unit": "g",
+                "substitute": "1/4 tsp ground ginger",
+                "subReason": "Fresh ginger is best for the initial blanching stage. Ground ginger can replace it in a pinch.",
+                "origPrice": 0.3,
+                "subPrice": 0.2,
+                "similarityScore": 75,
+                "amazonLink": null
+            },
+            {
+                "name": "Green Onions",
+                "category": "Local Mart",
+                "amount": 2,
+                "unit": "stalks",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.5,
+                "subPrice": 0.5,
+                "similarityScore": null,
+                "amazonLink": null
             }
         ],
         "tools": [
@@ -2310,5 +2706,1519 @@
             "Add mushrooms, onions, and peppers, then continue to braise until the sauce has thickened into a glossy glaze."
         ],
         "image": "/images/pork_backbone_stew.png"
+    },
+    {
+        "id": "kimchi-bokkeumbap",
+        "title": "Kimchi Bokkeumbap (Kimchi Fried Rice)",
+        "description": "Korea's ultimate leftover makeover — tangy aged kimchi stir-fried with cold rice until every grain is coated in a deep, spicy-savory glaze. Topped with a runny fried egg, this is the dish every Korean craves at midnight. Simple, fast, and profoundly satisfying.",
+        "image": "/images/kimchi_bokkeumbap.png",
+        "cookTime": "15 min",
+        "difficulty": "Beginner",
+        "servings": 2,
+        "pantryLevel": 1,
+        "textureCheck": "Each grain of rice should be separate and slightly chewy, not mushy or clumped. The kimchi pieces should be semi-translucent and deeply flavored. The egg yolk must be runny — it acts as a sauce that enriches the rice when broken. If the rice looks wet, increase the heat and spread it in a thin layer to evaporate moisture.",
+        "ingredients": [
+            {
+                "name": "Aged Kimchi (chopped)",
+                "category": "Korean Mart",
+                "amount": 150,
+                "unit": "g",
+                "substitute": "Fresh cabbage + 2 tbsp sriracha + 1 tbsp rice vinegar",
+                "subReason": "Aged kimchi is key — the fermented sourness caramelizes beautifully when fried. Fresh cabbage with vinegar and sriracha mimics this effect when sautéed for 5 minutes before adding rice.",
+                "origPrice": 3.0,
+                "subPrice": 1.2,
+                "similarityScore": 70,
+                "amazonLink": "https://www.amazon.com/s?k=kimchi"
+            },
+            {
+                "name": "Cold Cooked Rice",
+                "category": "Local Mart",
+                "amount": 400,
+                "unit": "g",
+                "substitute": "Day-old jasmine or long-grain rice",
+                "subReason": "Cold leftover rice has lower moisture content, creating perfectly separated grains when fried. Fresh rice will turn mushy — spread it on a tray and refrigerate for 1 hour if needed.",
+                "origPrice": 1.0,
+                "subPrice": 1.0,
+                "similarityScore": 95,
+                "amazonLink": null
+            },
+            {
+                "name": "Gochujang (Korean Chili Paste)",
+                "category": "Korean Mart",
+                "amount": 15,
+                "unit": "ml",
+                "substitute": "1 tbsp sriracha + 1 tsp miso paste",
+                "subReason": "Gochujang adds fermented, sweet heat that coats the rice beautifully. Sriracha + miso provides similar body and heat — mix well before adding to the pan.",
+                "origPrice": 4.0,
+                "subPrice": 1.5,
+                "similarityScore": 80,
+                "amazonLink": "https://www.amazon.com/s?k=gochujang"
+            },
+            {
+                "name": "Gochugaru (Korean Chili Flakes)",
+                "category": "Korean Mart",
+                "amount": 10,
+                "unit": "ml",
+                "substitute": "1/2 tsp sweet paprika + 1/4 tsp cayenne",
+                "subReason": "Gochugaru adds color and mild fruity heat. Paprika provides the color while cayenne adds the kick.",
+                "origPrice": 3.0,
+                "subPrice": 0.8,
+                "similarityScore": 75,
+                "amazonLink": "https://www.amazon.com/s?k=gochugaru"
+            },
+            {
+                "name": "Fish Sauce (Tuna or Anchovy)",
+                "category": "Korean Mart",
+                "amount": 15,
+                "unit": "ml",
+                "substitute": "Soy sauce + a pinch of MSG (or a drop of Worcestershire sauce)",
+                "subReason": "Korean tuna fish sauce adds a deep umami funk unique to Korean fried rice. Regular fish sauce or soy sauce works well — Worcestershire adds a similar fermented complexity.",
+                "origPrice": 3.0,
+                "subPrice": 1.0,
+                "similarityScore": 78,
+                "amazonLink": "https://www.amazon.com/s?k=fish+sauce"
+            },
+            {
+                "name": "Garlic (minced)",
+                "category": "Local Mart",
+                "amount": 10,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.5,
+                "subPrice": 0.5,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Mayonnaise",
+                "category": "Local Mart",
+                "amount": 60,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.8,
+                "subPrice": 0.8,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Green Onion (daepa/scallion)",
+                "category": "Local Mart",
+                "amount": 50,
+                "unit": "g",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.5,
+                "subPrice": 0.5,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Eggs",
+                "category": "Local Mart",
+                "amount": 2,
+                "unit": "unit",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.6,
+                "subPrice": 0.6,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Sesame Oil",
+                "category": "Local Mart",
+                "amount": 10,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.8,
+                "subPrice": 0.8,
+                "similarityScore": null,
+                "amazonLink": null
+            }
+        ],
+        "tools": [
+            {
+                "name": "Large Wok or Non-stick Pan",
+                "substitute": "Any large frying pan — the key is very high heat",
+                "amazonLink": "https://www.amazon.com/s?k=wok+pan"
+            }
+        ],
+        "steps": [
+            "Chop the kimchi, green onion, and any optional protein (ham or sausage) into small bite-sized pieces.",
+            "Mix the sauce: combine gochujang, gochugaru, fish sauce, minced garlic, and a pinch of sugar in a small bowl.",
+            "Heat a pan over high heat. Add the chopped kimchi, optional protein, and the sauce mixture with 60ml of water. Stir-fry until the liquid reduces by half — about 3 minutes. Set aside.",
+            "Wipe the pan clean and heat it again over high heat. Add mayonnaise directly to the dry pan — it will melt and coat the surface, acting as a rich cooking fat.",
+            "Add the cold rice and the prepared kimchi mixture. Stir-fry aggressively, pressing the rice flat against the pan in intervals to create slightly crispy bits.",
+            "Add the chopped green onion and toss briefly, just 30 seconds. Finish with a drizzle of sesame oil off the heat.",
+            "In a separate small pan, fry eggs sunny-side up. The yolk must stay runny. Plate the fried rice and top each serving with one egg. Break the yolk at the table — it becomes a luxurious sauce."
+        ]
+    },
+    {
+        "id": "gungmul-tteokbokki",
+        "title": "Gungmul Tteokbokki (Saucy Spicy Rice Cakes)",
+        "description": "The saucier, brothier cousin of street-style tteokbokki. Chewy rice cakes and fish cakes swim in a deep, complex gochujang-soy broth that begs to be eaten with every last drop. Korea's most beloved street food, now perfected for home cooking.",
+        "image": "/images/tteokbokki.png",
+        "cookTime": "25 min",
+        "difficulty": "Beginner",
+        "servings": 2,
+        "pantryLevel": 2,
+        "textureCheck": "The rice cakes should be fully soft and chewy all the way through with no hard center — poke one with a chopstick to test. The broth should be thick and glossy, clinging to the rice cakes. If too watery, simmer uncovered 5 more minutes. Fish cakes should be tender and saturated with the sauce.",
+        "ingredients": [
+            {
+                "name": "Tteok (Korean Rice Cakes)",
+                "category": "Korean Mart",
+                "amount": 400,
+                "unit": "g",
+                "substitute": "Fresh mozzarella sticks (for texture only) or chewy gnocchi",
+                "subReason": "Korean rice cakes have a unique dense, chewy texture that is hard to replicate. If unavailable, look for Chinese nian gao (년糕) in Asian grocery stores — it is nearly identical. Gnocchi is the most accessible substitute but will have a softer texture.",
+                "origPrice": 4.0,
+                "subPrice": 2.5,
+                "similarityScore": 78,
+                "amazonLink": "https://www.amazon.com/s?k=korean+rice+cake+tteok"
+            },
+            {
+                "name": "Fish Cakes (Eomuk)",
+                "category": "Korean Mart",
+                "amount": 150,
+                "unit": "g",
+                "substitute": "Imitation crab sticks or tofu puffs",
+                "subReason": "Korean fish cakes (eomuk) have a springy, slightly sweet flavor that absorbs broth wonderfully. Imitation crab adds a similar seafood sweetness. Tofu puffs work for a vegetarian version.",
+                "origPrice": 3.0,
+                "subPrice": 1.5,
+                "similarityScore": 72,
+                "amazonLink": "https://www.amazon.com/s?k=korean+fish+cake+eomuk"
+            },
+            {
+                "name": "Anchovy Stock (or Water)",
+                "category": "Local Mart",
+                "amount": 500,
+                "unit": "ml",
+                "substitute": "Low-sodium chicken broth + 1 sheet kombu kelp",
+                "subReason": "Anchovy stock is the umami backbone of tteokbokki. Simmer a strip of kombu in chicken broth for 10 minutes to replicate this savory depth without visiting a specialty store.",
+                "origPrice": 1.5,
+                "subPrice": 1.5,
+                "similarityScore": 82,
+                "amazonLink": null
+            },
+            {
+                "name": "Gochugaru (Korean Chili Flakes)",
+                "category": "Korean Mart",
+                "amount": 25,
+                "unit": "ml",
+                "substitute": "2 tsp sweet paprika + 1 tsp cayenne",
+                "subReason": "Gochugaru gives tteokbokki its iconic deep red color and fruity, mild heat. Paprika + cayenne provides the closest color and heat balance.",
+                "origPrice": 3.0,
+                "subPrice": 0.8,
+                "similarityScore": 78,
+                "amazonLink": "https://www.amazon.com/s?k=gochugaru"
+            },
+            {
+                "name": "Soy Sauce",
+                "category": "Local Mart",
+                "amount": 50,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.8,
+                "subPrice": 0.8,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Sugar",
+                "category": "Local Mart",
+                "amount": 40,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.3,
+                "subPrice": 0.3,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Honey or Corn Syrup",
+                "category": "Local Mart",
+                "amount": 30,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.8,
+                "subPrice": 0.8,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Garlic (minced)",
+                "category": "Local Mart",
+                "amount": 10,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.4,
+                "subPrice": 0.4,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Cabbage (chopped)",
+                "category": "Local Mart",
+                "amount": 80,
+                "unit": "g",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.5,
+                "subPrice": 0.5,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Green Onion",
+                "category": "Local Mart",
+                "amount": 40,
+                "unit": "g",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.4,
+                "subPrice": 0.4,
+                "similarityScore": null,
+                "amazonLink": null
+            }
+        ],
+        "tools": [
+            {
+                "name": "Wide Shallow Pan",
+                "substitute": "Any large frying pan or skillet with high sides",
+                "amazonLink": "https://www.amazon.com/s?k=wide+shallow+pan"
+            }
+        ],
+        "steps": [
+            "If using refrigerated or frozen rice cakes, soak them in cold water for 30 minutes to soften. Drain before cooking.",
+            "Make the sauce: Combine gochugaru, soy sauce, sugar, honey, and minced garlic in a bowl. Mix until uniform.",
+            "Pour the anchovy stock (or substitute) into a wide pan. Bring to a boil over high heat.",
+            "Add the sauce mixture and stir to combine. Add the rice cakes and fish cakes.",
+            "Boil for 8-10 minutes, stirring constantly to prevent the rice cakes from sticking to the bottom. They are ready when completely soft and chewy throughout.",
+            "Add cabbage and green onions. Cook 2 more minutes until the cabbage just wilts.",
+            "The broth should be glossy and thick. If too thin, boil uncovered 3-5 more minutes. Serve immediately in the pan — tteokbokki waits for no one."
+        ]
+    },
+    {
+        "id": "dubu-jorim",
+        "title": "Dubu Jorim (Spicy Braised Tofu)",
+        "description": "Crispy golden tofu seared until caramelized, then braised in an intensely savory and spicy sauce until each piece is fully saturated with flavor. This is the Korean recipe that converts tofu skeptics — the texture contrast between the crispy exterior and soft interior, soaked in that bold sauce, is extraordinary.",
+        "image": "/images/dubu_jorim.png",
+        "cookTime": "20 min",
+        "difficulty": "Beginner",
+        "servings": 2,
+        "pantryLevel": 1,
+        "textureCheck": "The tofu should have a firm, golden-brown crust that provides resistance before giving way to a soft, custardy interior. The sauce should be thick and glossy — almost lacquer-like — not watery. If the sauce seems thin, boil it for 2 more minutes with the lid off. Each piece should be saturated with flavor all the way through.",
+        "ingredients": [
+            {
+                "name": "Firm Tofu",
+                "category": "Local Mart",
+                "amount": 400,
+                "unit": "g",
+                "substitute": "Extra-firm tofu pressed for 30 minutes",
+                "subReason": "Firm tofu holds its shape during searing and braising. If using regular firm tofu, press it between paper towels with a heavy weight for 30 minutes to remove excess moisture for better browning.",
+                "origPrice": 2.5,
+                "subPrice": 2.5,
+                "similarityScore": 95,
+                "amazonLink": null
+            },
+            {
+                "name": "Anchovy Stock",
+                "category": "Korean Mart",
+                "amount": 375,
+                "unit": "ml",
+                "substitute": "Low-sodium chicken broth",
+                "subReason": "Anchovy stock provides a subtle seafood umami base. Chicken broth works excellently here — the other sauce ingredients are bold enough to carry the dish.",
+                "origPrice": 2.0,
+                "subPrice": 1.5,
+                "similarityScore": 80,
+                "amazonLink": null
+            },
+            {
+                "name": "Gochugaru (Korean Chili Flakes)",
+                "category": "Korean Mart",
+                "amount": 30,
+                "unit": "ml",
+                "substitute": "1 tbsp sweet paprika + 1 tsp cayenne",
+                "subReason": "Gochugaru provides the signature red color and fruity heat. Paprika + cayenne matches the color and adjustable heat level.",
+                "origPrice": 3.0,
+                "subPrice": 0.8,
+                "similarityScore": 78,
+                "amazonLink": "https://www.amazon.com/s?k=gochugaru"
+            },
+            {
+                "name": "Soy Sauce",
+                "category": "Local Mart",
+                "amount": 30,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.5,
+                "subPrice": 0.5,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Fish Sauce (Myeolchi Aekjeot)",
+                "category": "Korean Mart",
+                "amount": 30,
+                "unit": "ml",
+                "substitute": "Regular fish sauce or soy sauce",
+                "subReason": "Korean anchovy fish sauce adds a uniquely pungent umami note. Any fish sauce (Thai, Vietnamese) works perfectly here. Use soy sauce for a vegetarian version.",
+                "origPrice": 2.5,
+                "subPrice": 1.5,
+                "similarityScore": 85,
+                "amazonLink": "https://www.amazon.com/s?k=fish+sauce"
+            },
+            {
+                "name": "Garlic (minced)",
+                "category": "Local Mart",
+                "amount": 20,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.5,
+                "subPrice": 0.5,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Honey or Corn Syrup",
+                "category": "Local Mart",
+                "amount": 30,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.8,
+                "subPrice": 0.8,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Perilla Oil (or Sesame Oil)",
+                "category": "Korean Mart",
+                "amount": 30,
+                "unit": "ml",
+                "substitute": "Toasted sesame oil",
+                "subReason": "Perilla oil has a nuttier, more herbal flavor than sesame oil. Toasted sesame oil is an excellent substitute and widely available.",
+                "origPrice": 4.0,
+                "subPrice": 2.5,
+                "similarityScore": 80,
+                "amazonLink": "https://www.amazon.com/s?k=perilla+oil"
+            },
+            {
+                "name": "Onion (sliced)",
+                "category": "Local Mart",
+                "amount": 60,
+                "unit": "g",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.3,
+                "subPrice": 0.3,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Green Onion (chopped)",
+                "category": "Local Mart",
+                "amount": 40,
+                "unit": "g",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.4,
+                "subPrice": 0.4,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Green or Red Chili Pepper",
+                "category": "Local Mart",
+                "amount": 2,
+                "unit": "unit",
+                "substitute": "Jalapeño (use half)",
+                "subReason": "Korean cheongyang chilies are moderately spicy. Half a jalapeño provides similar heat — deseed it for a milder result.",
+                "origPrice": 0.4,
+                "subPrice": 0.4,
+                "similarityScore": 80,
+                "amazonLink": null
+            }
+        ],
+        "tools": [
+            {
+                "name": "Non-stick or Cast Iron Pan",
+                "substitute": "Any heavy-bottomed pan — the key is getting the tofu very dry before searing",
+                "amazonLink": "https://www.amazon.com/s?k=cast+iron+skillet"
+            }
+        ],
+        "steps": [
+            "Slice tofu into 1cm thick rectangles. Sprinkle both sides gently with salt and let sit for 5 minutes, then pat completely dry with paper towels. Removing moisture is essential for a golden crust.",
+            "Heat a non-stick pan over medium-high heat with a thin film of oil. Sear tofu slices without moving them for 3-4 minutes per side until deeply golden brown. Work in batches — do not crowd the pan.",
+            "While tofu cooks, mix the braising sauce: anchovy stock, gochugaru, soy sauce, fish sauce, garlic, and honey in a bowl.",
+            "Combine sliced onion, green onion, and chilies in the pan. Pour the sauce mixture over them. Bring to a gentle boil.",
+            "Carefully place the seared tofu back into the sauce. Braise over medium heat for 5 minutes, occasionally spooning sauce over the top of each piece.",
+            "Drizzle perilla oil (or sesame oil) over the top. The sauce should be thick and coating the tofu pieces in a glossy glaze.",
+            "Serve as a banchan (side dish) with steamed rice. The sauce is incredible poured over white rice — make extra."
+        ]
+    },
+    {
+        "id": "algamja-jorim",
+        "title": "Al-gamja Jorim (Glazed Baby Potatoes)",
+        "description": "Tiny baby potatoes simmered in a sweet-savory soy glaze until each one is shiny and deeply caramelized. One of Korea's most beloved banchan — these sticky, addictive little potatoes disappear before they even make it to the table. Impossible to stop eating.",
+        "image": "/images/algamja_jorim.png",
+        "cookTime": "25 min",
+        "difficulty": "Beginner",
+        "servings": 4,
+        "pantryLevel": 1,
+        "textureCheck": "The potatoes should be fully cooked through — insert a chopstick and it should slide in with zero resistance. The glaze should be thick enough to coat each potato in a shiny, sticky layer. If still watery, boil uncovered on high heat for 3-5 minutes. The finished potatoes should look lacquered and glossy.",
+        "ingredients": [
+            {
+                "name": "Baby Potatoes (al-gamja)",
+                "category": "Local Mart",
+                "amount": 500,
+                "unit": "g",
+                "substitute": "Small fingerling potatoes, halved",
+                "subReason": "Baby potatoes are ideal because their small size allows even sauce absorption. Fingerling potatoes cut in half provide the same surface area. Avoid large potatoes — they won't glaze evenly.",
+                "origPrice": 2.5,
+                "subPrice": 2.5,
+                "similarityScore": 92,
+                "amazonLink": null
+            },
+            {
+                "name": "Soy Sauce",
+                "category": "Local Mart",
+                "amount": 60,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.8,
+                "subPrice": 0.8,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Honey or Corn Syrup",
+                "category": "Local Mart",
+                "amount": 60,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 1.0,
+                "subPrice": 1.0,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Water",
+                "category": "Local Mart",
+                "amount": 60,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.0,
+                "subPrice": 0.0,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Cooking Oil",
+                "category": "Local Mart",
+                "amount": 30,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.3,
+                "subPrice": 0.3,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Gochugaru (Korean Chili Flakes)",
+                "category": "Korean Mart",
+                "amount": 15,
+                "unit": "ml",
+                "substitute": "1 tsp sweet paprika + pinch of cayenne (optional)",
+                "subReason": "Gochugaru adds a subtle heat and red color to the glaze. It is optional — for a sweet non-spicy version, simply omit it. Paprika maintains the color without extra heat.",
+                "origPrice": 3.0,
+                "subPrice": 0.8,
+                "similarityScore": 75,
+                "amazonLink": "https://www.amazon.com/s?k=gochugaru"
+            },
+            {
+                "name": "Sesame Oil",
+                "category": "Local Mart",
+                "amount": 10,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.8,
+                "subPrice": 0.8,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Green Chili & Red Chili (sliced)",
+                "category": "Local Mart",
+                "amount": 2,
+                "unit": "unit",
+                "substitute": "Jalapeño slices (optional, for color)",
+                "subReason": "The chilies add color contrast and a fresh heat note at the end of cooking. They are largely decorative — use mild peppers for color without extra spice.",
+                "origPrice": 0.4,
+                "subPrice": 0.4,
+                "similarityScore": 80,
+                "amazonLink": null
+            }
+        ],
+        "tools": [
+            {
+                "name": "Heavy-bottomed Pot with Lid",
+                "substitute": "Any medium saucepan — a lid is essential for the initial simmering phase",
+                "amazonLink": "https://www.amazon.com/s?k=heavy+saucepan"
+            }
+        ],
+        "steps": [
+            "Thoroughly scrub the baby potatoes under cold water. No need to peel — the skin holds the potatoes together and adds texture.",
+            "Place potatoes in a pot. Add water, soy sauce, honey, gochugaru (if using), and cooking oil. Do not add sesame oil yet — it goes in at the end.",
+            "Bring to a boil over medium-high heat, then reduce to medium. Cover with a lid and simmer for 15 minutes, or until potatoes are just cooked through.",
+            "Remove the lid and increase heat to medium-high. Stir gently and continuously as the sauce reduces and caramelizes around the potatoes — this takes 5-7 minutes.",
+            "The potatoes are done when the sauce has reduced to a thick, sticky glaze that coats every potato. Remove from heat.",
+            "Add the sliced chilies and drizzle sesame oil over the top. Toss gently — the residual heat will soften the chilies.",
+            "Serve at room temperature as a banchan (side dish). Al-gamja Jorim actually improves with time and is excellent the next day as the flavors deepen."
+        ]
+    },
+    {
+        "id": "cheonggukjang-jjigae",
+        "title": "Cheonggukjang Jjigae (Fermented Soybean Stew)",
+        "description": "The bold, pungent cousin of Doenjang Jjigae — made with cheonggukjang, an ultra-fermented Korean soybean paste that is aged for only 2–3 days, resulting in an intensely flavored, deeply savory stew. An acquired taste for foreigners, but once you love it, nothing else compares. This is Korean comfort food at its most authentic.",
+        "image": "/images/cheonggukjang_jjigae.png",
+        "cookTime": "25 min",
+        "difficulty": "Beginner",
+        "servings": 2,
+        "pantryLevel": 2,
+        "textureCheck": "The broth should be deep brown and intensely savory — pungent in a deeply satisfying way. The radish pieces should be fully cooked through (test with a chopstick). Never let the stew boil violently after adding cheonggukjang — a gentle simmer preserves the complex fermented flavors. Tofu should hold its shape but be soft inside.",
+        "ingredients": [
+            {
+                "name": "Cheonggukjang (Fast-fermented Soybean Paste)",
+                "category": "Korean Mart",
+                "amount": 200,
+                "unit": "g",
+                "substitute": "200g red miso + 1 tbsp soy sauce + 1 tsp fish sauce",
+                "subReason": "Cheonggukjang is extremely pungent — more so than doenjang. Red (aka) miso is the closest substitute in terms of depth and fermented intensity. Adding soy sauce and fish sauce boosts the umami to compensate for cheonggukjang's unique funk.",
+                "origPrice": 5.0,
+                "subPrice": 3.0,
+                "similarityScore": 72,
+                "amazonLink": "https://www.amazon.com/s?k=cheonggukjang"
+            },
+            {
+                "name": "Doenjang (Korean Soybean Paste)",
+                "category": "Korean Mart",
+                "amount": 70,
+                "unit": "g",
+                "substitute": "White or yellow miso paste",
+                "subReason": "Doenjang provides a smoother, deeper base that complements cheonggukjang's sharp notes. White miso provides a similar savory backbone without overwhelming the other ingredients.",
+                "origPrice": 4.0,
+                "subPrice": 2.5,
+                "similarityScore": 78,
+                "amazonLink": "https://www.amazon.com/s?k=doenjang"
+            },
+            {
+                "name": "Anchovy or Beef Stock",
+                "category": "Local Mart",
+                "amount": 500,
+                "unit": "ml",
+                "substitute": "Low-sodium beef broth",
+                "subReason": "A rich stock base is essential. Beef broth adds a hearty depth that pairs excellently with the fermented paste flavors.",
+                "origPrice": 2.0,
+                "subPrice": 1.5,
+                "similarityScore": 80,
+                "amazonLink": null
+            },
+            {
+                "name": "Firm Tofu (cubed)",
+                "category": "Local Mart",
+                "amount": 200,
+                "unit": "g",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 2.0,
+                "subPrice": 2.0,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Korean Radish (Mu, diced)",
+                "category": "Korean Mart",
+                "amount": 150,
+                "unit": "g",
+                "substitute": "Daikon radish or turnip",
+                "subReason": "Korean mu (radish) has a mild, slightly sweet flavor that absorbs broth beautifully. Daikon is nearly identical. Turnip works as a last resort but has a different flavor profile.",
+                "origPrice": 1.5,
+                "subPrice": 1.5,
+                "similarityScore": 88,
+                "amazonLink": null
+            },
+            {
+                "name": "Onion (sliced)",
+                "category": "Local Mart",
+                "amount": 60,
+                "unit": "g",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.3,
+                "subPrice": 0.3,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Gochugaru (Korean Chili Flakes)",
+                "category": "Korean Mart",
+                "amount": 15,
+                "unit": "ml",
+                "substitute": "1 tsp paprika + pinch of cayenne",
+                "subReason": "Gochugaru adds mild heat and color. Paprika with a pinch of cayenne provides similar color and adjustable heat.",
+                "origPrice": 3.0,
+                "subPrice": 0.8,
+                "similarityScore": 75,
+                "amazonLink": "https://www.amazon.com/s?k=gochugaru"
+            },
+            {
+                "name": "Green Onion (chopped)",
+                "category": "Local Mart",
+                "amount": 40,
+                "unit": "g",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.4,
+                "subPrice": 0.4,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Sugar",
+                "category": "Local Mart",
+                "amount": 5,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.1,
+                "subPrice": 0.1,
+                "similarityScore": null,
+                "amazonLink": null
+            }
+        ],
+        "tools": [
+            {
+                "name": "Earthenware Ttukbaegi (Stone Pot)",
+                "substitute": "Any small-medium heavy pot — the key is retaining heat well",
+                "amazonLink": "https://www.amazon.com/s?k=korean+earthenware+pot+ttukbaegi"
+            }
+        ],
+        "steps": [
+            "If using beef stock, bring it to a simmer. Add diced radish and sliced onion and cook over medium heat for 7-8 minutes until the radish begins to turn translucent.",
+            "In a small bowl, mix cheonggukjang, doenjang, and gochugaru together to form a paste. This pre-mixing ensures even distribution throughout the stew.",
+            "Stir the paste into the simmering broth. Do NOT boil violently from this point — a strong simmer destroys the fermented flavors. Keep at a gentle bubble.",
+            "Add tofu cubes carefully and any optional beef, if using. Add a pinch of sugar to balance the intense umami.",
+            "Simmer gently for 5-7 minutes. Add the green onion in the last 2 minutes of cooking.",
+            "Taste the broth — it should be intensely savory, complex, and deeply earthy. Adjust: more doenjang for depth, more gochugaru for heat.",
+            "Serve immediately in the earthenware pot at the table if possible — cheonggukjang jjigae must be eaten piping hot with steamed rice. Warn newcomers that the aroma is bold but the flavor is extraordinary."
+        ]
+    },
+    {
+        "id": "gochu-basasak-chicken",
+        "title": "Gochu Basasak Chicken & Special Dipping Sauces",
+        "description": "Korea's legendary crispy baked chicken — inspired by Goobne's iconic Gochu Basasak menu. A spicy herb crust made with gochugaru, curry powder, garlic, and panko delivers an explosive crunch without deep frying. Comes with two signature dipping sauces: the creamy Marbling Sauce and the fiery Goblin Sauce.",
+        "image": "/images/gochu_basasak_chicken.png",
+        "cookTime": "50 min",
+        "difficulty": "Intermediate",
+        "servings": 2,
+        "pantryLevel": 2,
+        "textureCheck": "The crust should be audibly crunchy — you should hear it shatter the moment you bite. The skin must be golden-amber, not pale or beige. If spots are still pale after the full cook time, flip and blast at 200°C for the final 5 minutes. The inside must reach 74°C (165°F) — thicker pieces need 5 more minutes. The sauce should be thick enough to coat a spoon without dripping immediately.",
+        "ingredients": [
+            {
+                "name": "Chicken (drumsticks, wings, or bone-in thighs)",
+                "category": "Local Mart",
+                "amount": 900,
+                "unit": "g",
+                "substitute": "Chicken tenders or boneless thighs (reduce cook time by 8 min)",
+                "subReason": "Bone-in pieces stay juicy under the dry crust. If using boneless, coat generously and check doneness at 20 minutes to avoid overcooking.",
+                "origPrice": 8.0,
+                "subPrice": 7.0,
+                "similarityScore": 88,
+                "amazonLink": null
+            },
+            {
+                "name": "Buttermilk (for marinating)",
+                "category": "Local Mart",
+                "amount": 300,
+                "unit": "ml",
+                "substitute": "Milk 300ml + 1 tbsp white vinegar — let sit 5 minutes until slightly curdled",
+                "subReason": "Buttermilk tenderizes the chicken and helps the crust bond perfectly. The acid-milk substitute works identically — the curdle is the active ingredient.",
+                "origPrice": 2.0,
+                "subPrice": 0.8,
+                "similarityScore": 95,
+                "amazonLink": null
+            },
+            {
+                "name": "Panko Breadcrumbs",
+                "category": "Local Mart",
+                "amount": 80,
+                "unit": "g",
+                "substitute": "Crush regular breadcrumbs coarsely with hands, or crushed cornflakes",
+                "subReason": "Panko's large, airy flakes create the signature crunch. Crushed cornflakes are actually an excellent substitute — they crispen beautifully in the oven.",
+                "origPrice": 2.0,
+                "subPrice": 1.5,
+                "similarityScore": 87,
+                "amazonLink": "https://www.amazon.com/s?k=panko+breadcrumbs"
+            },
+            {
+                "name": "Gochugaru (Korean Chili Flakes)",
+                "category": "Korean Mart",
+                "amount": 20,
+                "unit": "ml",
+                "substitute": "2 tsp sweet paprika + 1 tsp cayenne pepper",
+                "subReason": "Gochugaru gives the crust its iconic earthy red color and fruity heat. Paprika + cayenne replicates the color and heat profile closely.",
+                "origPrice": 3.0,
+                "subPrice": 1.0,
+                "similarityScore": 78,
+                "amazonLink": "https://www.amazon.com/s?k=gochugaru"
+            },
+            {
+                "name": "Curry Powder",
+                "category": "Local Mart",
+                "amount": 15,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 1.0,
+                "subPrice": 1.0,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Garlic Powder",
+                "category": "Local Mart",
+                "amount": 10,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.5,
+                "subPrice": 0.5,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Dried Parsley",
+                "category": "Local Mart",
+                "amount": 10,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.5,
+                "subPrice": 0.5,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Salt & Black Pepper",
+                "category": "Local Mart",
+                "amount": 5,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.2,
+                "subPrice": 0.2,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Olive Oil Spray",
+                "category": "Local Mart",
+                "amount": 15,
+                "unit": "ml",
+                "substitute": "Regular cooking oil in a spray bottle or brush lightly with oil",
+                "subReason": "A light even coating of oil is what activates the Maillard reaction — turning the crust golden and crispy without deep frying.",
+                "origPrice": 1.5,
+                "subPrice": 0.5,
+                "similarityScore": 95,
+                "amazonLink": null
+            },
+            {
+                "name": "Mayonnaise (for Marbling Sauce)",
+                "category": "Local Mart",
+                "amount": 60,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 1.0,
+                "subPrice": 1.0,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Sriracha Hot Sauce (for both sauces)",
+                "category": "Local Mart",
+                "amount": 45,
+                "unit": "ml",
+                "substitute": "Frank's RedHot or any garlic hot sauce",
+                "subReason": "Sriracha provides the perfect blend of heat and sweetness for the creamy sauce. Any smooth hot sauce with a garlic note works well.",
+                "origPrice": 2.5,
+                "subPrice": 2.0,
+                "similarityScore": 88,
+                "amazonLink": "https://www.amazon.com/s?k=sriracha"
+            },
+            {
+                "name": "Oligosaccharide Syrup (Oligodang)",
+                "category": "Korean Mart",
+                "amount": 20,
+                "unit": "ml",
+                "substitute": "Honey or corn syrup",
+                "subReason": "Oligodang is a Korean natural sweetener that adds gloss and mild sweetness. Honey works identically — use the same amount.",
+                "origPrice": 3.0,
+                "subPrice": 1.5,
+                "similarityScore": 90,
+                "amazonLink": "https://www.amazon.com/s?k=oligosaccharide+syrup+korean"
+            },
+            {
+                "name": "Buldak Hot Sauce (for Goblin Sauce only)",
+                "category": "Korean Mart",
+                "amount": 30,
+                "unit": "ml",
+                "substitute": "Tabasco + 1 tsp sugar — or 1 tsp gochujang + 1 tsp sriracha",
+                "subReason": "Buldak (fire chicken) sauce brings an intense, smoky heat unique to Korean spicy sauces. Tabasco with sugar mimics the heat level; gochujang + sriracha gets closer to the Korean flavor profile.",
+                "origPrice": 4.0,
+                "subPrice": 1.5,
+                "similarityScore": 72,
+                "amazonLink": "https://www.amazon.com/s?k=buldak+hot+sauce"
+            }
+        ],
+        "tools": [
+            {
+                "name": "Air Fryer",
+                "substitute": "Oven with wire rack at 185°C (365°F) — place rack on a baking sheet to allow airflow under chicken",
+                "amazonLink": "https://www.amazon.com/s?k=air+fryer"
+            },
+            {
+                "name": "Zip-Lock Bag or Large Bowl",
+                "substitute": "Any sealable container for marinating",
+                "amazonLink": null
+            }
+        ],
+        "steps": [
+            "Marinate chicken: Combine buttermilk (or milk + vinegar substitute), 1 tsp salt, and 1/2 tsp black pepper in a large zip-lock bag or bowl. Add chicken, seal, and refrigerate for minimum 30 minutes (up to overnight for maximum tenderness and flavor absorption).",
+            "Make the spice crust: In a wide, shallow bowl, combine panko breadcrumbs, gochugaru, curry powder, garlic powder, dried parsley, salt, and black pepper. Mix thoroughly until uniform orange-red.",
+            "Coat the chicken: Remove each piece from the buttermilk marinade, letting excess drip off (do NOT rinse). Press each piece firmly into the spice-panko mixture, coating all surfaces completely. Press and squeeze the coating onto the chicken so it adheres well.",
+            "Spray & arrange: Place coated chicken on an air fryer basket or wire rack (do NOT stack). Spray generously with olive oil on all sides — this step is critical for achieving golden color without deep frying.",
+            "Air fry: At 185°C (365°F) for 15 minutes. Flip each piece, spray again with oil. Continue cooking for 10-15 more minutes until deep golden and internal temperature reaches 74°C (165°F). For oven: 185°C for 20 minutes per side.",
+            "Make the Marbling Sauce: Whisk together 4 tbsp mayonnaise + 2 tbsp sriracha + 1 tbsp oligodang (or honey). Mix until smooth and creamy. Taste — adjust to your preference: more mayo for milder, more sriracha for spicier.",
+            "Make the Goblin Sauce: Combine 2 tbsp mayonnaise + 2 tbsp sriracha + 1 tbsp oligodang + 2 tbsp buldak hot sauce + 1 tsp gochugaru. Mix well. This sauce is significantly spicier and more complex — not for the faint of heart.",
+            "Serve the crispy chicken immediately on a platter with both sauces in separate dipping bowls. Pickled radish (chikin-mu) on the side cuts the richness perfectly. The crust stays crispy for 15 minutes — eat fast!"
+        ]
+    },
+    {
+        "id": "gimbap",
+        "title": "Classic Gimbap (Korean Seaweed Rice Rolls)",
+        "description": "Korea's beloved everyday roll — gim (dried seaweed) wrapped around seasoned rice, colorful vegetables, and your choice of fillings. Unlike sushi, gimbap uses sesame-flavored rice and focuses on bold, savory fillings. It's the ultimate portable Korean meal, eaten on picnics, in lunch boxes, and as street food across Korea.",
+        "image": "/images/gimbap.png",
+        "cookTime": "45 min",
+        "difficulty": "Intermediate",
+        "servings": 2,
+        "pantryLevel": 2,
+        "textureCheck": "The roll should hold its shape when cut — if it falls apart, your rice layer was too thin or your rolling mat wasn't tight enough. Each cross-section should show a clean, round spiral with each filling visible. The seaweed should be slightly chewy but not tough. The rice should be slightly warm when rolling — cold rice cracks the seaweed. Cut with a single decisive downward stroke using a sharp knife wiped with sesame oil between each cut.",
+        "ingredients": [
+            {
+                "name": "Gim (Korean Dried Seaweed Sheets)",
+                "category": "Korean Mart",
+                "amount": 4,
+                "unit": "sheet",
+                "substitute": "Japanese nori sheets (identical product, just a different name)",
+                "subReason": "Korean gim and Japanese nori are the same product — roasted seaweed sheets. Find them in any Asian grocery store or the international aisle of most supermarkets.",
+                "origPrice": 3.0,
+                "subPrice": 2.5,
+                "similarityScore": 98,
+                "amazonLink": "https://www.amazon.com/s?k=korean+gim+roasted+seaweed+sheets"
+            },
+            {
+                "name": "Short-Grain Rice (cooked)",
+                "category": "Local Mart",
+                "amount": 400,
+                "unit": "g",
+                "substitute": "Japanese sushi rice or Calrose rice",
+                "subReason": "You need sticky, short-grain rice — the cohesiveness holds the roll together. Long-grain rice like jasmine will not work properly; the roll will crumble.",
+                "origPrice": 2.5,
+                "subPrice": 2.5,
+                "similarityScore": 95,
+                "amazonLink": null
+            },
+            {
+                "name": "Sesame Oil",
+                "category": "Local Mart",
+                "amount": 20,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 1.5,
+                "subPrice": 1.5,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Danmuji (Pickled Yellow Radish)",
+                "category": "Korean Mart",
+                "amount": 4,
+                "unit": "strip",
+                "substitute": "Pickled daikon strips or quick-pickled cucumber with turmeric for color",
+                "subReason": "Danmuji provides a sweet, tangy crunch that's essential to classic gimbap texture. Pickled daikon performs identically. To make a quick substitute: slice cucumber thin, toss with rice vinegar, sugar, salt, and a pinch of turmeric, rest 15 minutes.",
+                "origPrice": 2.0,
+                "subPrice": 1.0,
+                "similarityScore": 85,
+                "amazonLink": "https://www.amazon.com/s?k=danmuji+korean+pickled+radish"
+            },
+            {
+                "name": "Spinach",
+                "category": "Local Mart",
+                "amount": 100,
+                "unit": "g",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 1.5,
+                "subPrice": 1.5,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Carrots (julienned)",
+                "category": "Local Mart",
+                "amount": 80,
+                "unit": "g",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.5,
+                "subPrice": 0.5,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Ham or Imitation Crab Sticks",
+                "category": "Local Mart",
+                "amount": 100,
+                "unit": "g",
+                "substitute": "Cooked chicken breast strips, tuna, or extra vegetables for vegan",
+                "subReason": "The protein adds savory depth and visual contrast. Any firm, flavorful protein that can be formed into strips works. Vegan option: add extra avocado, kimchi, or roasted mushroom strips.",
+                "origPrice": 2.5,
+                "subPrice": 2.0,
+                "similarityScore": 82,
+                "amazonLink": null
+            },
+            {
+                "name": "Eggs",
+                "category": "Local Mart",
+                "amount": 2,
+                "unit": "unit",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.5,
+                "subPrice": 0.5,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Burdock Root (Gobo), pre-seasoned",
+                "category": "Korean Mart",
+                "amount": 80,
+                "unit": "g",
+                "substitute": "Celery sticks lightly sautéed in soy sauce + sesame oil",
+                "subReason": "Seasoned burdock adds an earthy, slightly sweet crunch that's very traditional in gimbap. Celery sautéed in soy sauce + sesame oil provides a similar crunch and savory flavor.",
+                "origPrice": 2.5,
+                "subPrice": 0.8,
+                "similarityScore": 70,
+                "amazonLink": "https://www.amazon.com/s?k=seasoned+burdock+root+korean"
+            },
+            {
+                "name": "Salt",
+                "category": "Local Mart",
+                "amount": 3,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.1,
+                "subPrice": 0.1,
+                "similarityScore": null,
+                "amazonLink": null
+            }
+        ],
+        "tools": [
+            {
+                "name": "Bamboo Rolling Mat (Makisu)",
+                "substitute": "A clean, smooth kitchen towel — lay a sheet of plastic wrap on it to prevent sticking",
+                "amazonLink": "https://www.amazon.com/s?k=bamboo+sushi+rolling+mat"
+            },
+            {
+                "name": "Sharp Knife",
+                "substitute": "A very sharp chef's knife — wipe with sesame oil between cuts for clean slices",
+                "amazonLink": null
+            }
+        ],
+        "steps": [
+            "Season the cooked rice: While still warm, gently fold in 1.5 tbsp sesame oil and 1 tsp salt. Do NOT mash — use a cutting folding motion to preserve grain texture. Taste — it should be noticeably savory from the salt and fragrant from the oil. Set aside to cool slightly.",
+            "Prepare fillings individually: Blanch spinach 30 seconds, squeeze dry, season with a pinch of salt and few drops of sesame oil. Sauté julienned carrots in a lightly oiled pan for 2 minutes with a pinch of salt. Make a thin egg omelet, roll it up, and slice into long strips.",
+            "Set up your rolling station: Place the bamboo mat on the surface with the slats running horizontally toward you. Place a gim sheet (shiny side down) on the mat.",
+            "Spread a thin, even layer of rice over the bottom 2/3 of the gim, leaving a 3cm (1 inch) bare strip at the far top edge — this bare strip will seal the roll. Use wet fingers to prevent sticking. Rice layer should be about 5mm thick (not too thick!).",
+            "Arrange all fillings in a horizontal line across the center of the rice — one strip each of danmuji, carrot, spinach, egg, ham, and burdock. Keep fillings compact and don't overfill — this is the most common beginner mistake.",
+            "Roll firmly: Using the mat, lift the bottom edge of the gim and roll it over the fillings, pressing firmly and squeezing to shape a tight cylinder. Roll forward to seal with the bare strip at the top. The roll must be firm and tight — apply even pressure along the entire length as you roll.",
+            "Lightly brush the outside of the roll with sesame oil for shine and flavor. Let rest seam-side down for 2 minutes before cutting.",
+            "Cut with a single sharp downward stroke — no sawing. Wipe the knife with a sesame oil cloth between each cut. Cut into 8 pieces. Serve immediately or pack for lunch — gimbap holds well for 4-6 hours at room temperature."
+        ]
+    },
+    {
+        "id": "haemul-pajeon",
+        "title": "Haemul Pajeon (Seafood Scallion Pancake)",
+        "description": "A thick, golden, savory Korean pancake packed with green scallions, shrimp, squid, and oysters — pan-fried to a perfectly crispy exterior with a tender, chewy interior. This is the ultimate Korean bar food, classically paired with maekju (beer) or makgeolli (rice wine) on rainy days. The scallion is not just a garnish — it IS the pancake.",
+        "image": "/images/haemul_pajeon.png",
+        "cookTime": "30 min",
+        "difficulty": "Beginner",
+        "servings": 2,
+        "pantryLevel": 1,
+        "textureCheck": "The bottom should be a deep, even, mahogany brown — like the underside of a crêpe. The edges should be lacy and ultra-crispy. Press the center gently — it should give slightly but spring back. If the center is still wobbly after flipping, press with spatula for 2 minutes on medium heat. The scallions should be visible through the translucent batter, not hidden inside it.",
+        "ingredients": [
+            {
+                "name": "Green Onions / Scallions",
+                "category": "Local Mart",
+                "amount": 200,
+                "unit": "g",
+                "substitute": "Leeks (halved lengthwise, trimmed) — use the green parts only",
+                "subReason": "Korean pa (scallions) are the hero of this dish. If scallions are unavailable, thin leek strips behave identically when cooked. They provide the same savory, mild onion flavor and structural grid for the pancake.",
+                "origPrice": 2.0,
+                "subPrice": 2.5,
+                "similarityScore": 85,
+                "amazonLink": null
+            },
+            {
+                "name": "Mixed Seafood (shrimp, squid, oysters, or clams)",
+                "category": "Local Mart",
+                "amount": 200,
+                "unit": "g",
+                "substitute": "Canned clams + peeled shrimp from frozen",
+                "subReason": "Fresh mixed seafood is ideal but expensive. Frozen shrimp (thawed) + canned baby clams (drained) provide equivalent flavor and chew. The variety of textures actually improves the pancake.",
+                "origPrice": 8.0,
+                "subPrice": 4.5,
+                "similarityScore": 82,
+                "amazonLink": null
+            },
+            {
+                "name": "Pajeon Mix (Korean Pancake Mix)",
+                "category": "Korean Mart",
+                "amount": 150,
+                "unit": "g",
+                "substitute": "All-purpose flour 130g + rice flour 20g + 1/2 tsp baking powder + 1/2 tsp salt",
+                "subReason": "Pajeon mix is simply seasoned flour with a small amount of rice flour for crispiness. The DIY version achieves nearly identical results. The rice flour is the key to getting crispy edges — don't skip it.",
+                "origPrice": 3.5,
+                "subPrice": 1.0,
+                "similarityScore": 90,
+                "amazonLink": "https://www.amazon.com/s?k=korean+pancake+mix+pajeon"
+            },
+            {
+                "name": "Ice Cold Water",
+                "category": "Local Mart",
+                "amount": 180,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0,
+                "subPrice": 0,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Egg",
+                "category": "Local Mart",
+                "amount": 1,
+                "unit": "unit",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.3,
+                "subPrice": 0.3,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Vegetable Oil",
+                "category": "Local Mart",
+                "amount": 60,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.8,
+                "subPrice": 0.8,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Soy Sauce (for dipping sauce)",
+                "category": "Local Mart",
+                "amount": 45,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.5,
+                "subPrice": 0.5,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Rice Vinegar (for dipping sauce)",
+                "category": "Local Mart",
+                "amount": 15,
+                "unit": "ml",
+                "substitute": "White vinegar (1:1)",
+                "subReason": "Rice vinegar is milder and rounder in flavor, but any light vinegar cuts the oil of the pancake effectively in the dipping sauce.",
+                "origPrice": 1.0,
+                "subPrice": 0.5,
+                "similarityScore": 88,
+                "amazonLink": null
+            },
+            {
+                "name": "Gochugaru (for dipping sauce)",
+                "category": "Korean Mart",
+                "amount": 5,
+                "unit": "ml",
+                "substitute": "Pinch of red pepper flakes",
+                "subReason": "Just a pinch for color and mild heat in the dipping sauce. Any red chili flake works.",
+                "origPrice": 0.5,
+                "subPrice": 0.3,
+                "similarityScore": 85,
+                "amazonLink": null
+            }
+        ],
+        "tools": [
+            {
+                "name": "Large Non-Stick Skillet (30cm+)",
+                "substitute": "Cast iron skillet — preheat it for 5 minutes before adding oil for the best crust",
+                "amazonLink": "https://www.amazon.com/s?k=large+non+stick+skillet"
+            },
+            {
+                "name": "Wide Spatula",
+                "substitute": "Two regular spatulas used simultaneously for a clean, confident flip",
+                "amazonLink": null
+            }
+        ],
+        "steps": [
+            "Make the dipping sauce first: Mix soy sauce, rice vinegar, and a pinch of gochugaru together. Add a few drops of sesame oil and 1 tsp sugar. Stir until dissolved. The sauce should balance salty, sour, and mildly spicy — adjust to your taste. Set aside.",
+            "Make the batter: Whisk the pajeon mix (or flour substitute), ice cold water, and egg together in a bowl. Do NOT overmix — a few lumps are fine and actually desirable. The batter should be slightly thicker than crêpe batter. VERY IMPORTANT: use ice water — cold batter creates the crispy edges that make pajeon special.",
+            "Prep the scallions: Trim roots and tips. Arrange them in a tight bundle and lay flat — the scallions are the structural skeleton of the pancake, not just a topping. Roughly cut any pieces longer than your pan width in half.",
+            "Heat 3 tbsp oil in a large skillet over medium-high heat. The oil should be shimmering and hot — a drop of batter should sizzle immediately. Spread the scallions in a flat even layer covering the entire pan.",
+            "Scatter seafood pieces evenly over the scallion layer. Pour the batter over the top evenly, making sure it seeps between the scallions and seafood to bind everything together. Drizzle 1 more tbsp oil around the edges of the pancake.",
+            "Cook undisturbed for 4-5 minutes until the bottom is deep golden and the edges are crispy. Use a spatula to peek — do not flip until the bottom is properly golden.",
+            "Flip carefully — use two spatulas for confidence. Drizzle remaining oil around the edges again. Press firmly with a spatula to ensure the entire bottom surface contacts the pan. Cook 3-4 more minutes until deeply golden.",
+            "Optionally flip once more for 30 seconds for an even more caramelized bottom. Slice like a pizza — into wedges — directly in the pan. Serve with dipping sauce. It must be eaten hot for maximum crispiness."
+        ]
+    },
+    {
+        "id": "sundubu-jjigae-classic",
+        "title": "Sundubu Jjigae (Soft Tofu Stew)",
+        "description": "Korea's most beloved solo stew — a fiery, silky broth cradling pillowy soft tofu, pork, and clams, crowned with a raw egg that softly poaches in the bubbling broth. This is the epitome of Korean comfort food: spicy, warming, and deeply satisfying. It arrives at the table still violently boiling in its stone pot.",
+        "image": "/images/sundubu_jjigae_classic.png",
+        "cookTime": "25 min",
+        "difficulty": "Beginner",
+        "servings": 1,
+        "pantryLevel": 2,
+        "textureCheck": "The broth should be a deep brick-red, glossy and slightly viscous — not orange or watery. The soft tofu should be in large, unbroken chunks (add it gently and never stir after adding). The egg should be cracked in at the table and swirled once — it should be just set at the white with a still-runny yolk. If your broth is too thin, add an extra teaspoon of gochugaru and simmer uncovered for 3 minutes.",
+        "ingredients": [
+            {
+                "name": "Sundubu (Extra Soft Tofu / Silken Tofu)",
+                "category": "Korean Mart",
+                "amount": 300,
+                "unit": "g",
+                "substitute": "Any silken tofu from supermarket — squeeze out water gently in a cloth for 5 min",
+                "subReason": "Sundubu is the softest, most delicate tofu available. Standard silken tofu from Asian grocery stores or most supermarkets performs identically — the key is not to overcook or stir it.",
+                "origPrice": 2.5,
+                "subPrice": 2.0,
+                "similarityScore": 92,
+                "amazonLink": "https://www.amazon.com/s?k=korean+soft+tofu+sundubu"
+            },
+            {
+                "name": "Pork Belly (small cubes) or Ground Pork",
+                "category": "Local Mart",
+                "amount": 120,
+                "unit": "g",
+                "substitute": "Bacon (diced, rinsed) or mushrooms for vegan version",
+                "subReason": "Pork belly provides fat that enriches the broth — the rendered fat is what carries the gochugaru flavor throughout the dish. Ground pork works just as well. Diced bacon (rinsed to reduce saltiness) is an acceptable substitute.",
+                "origPrice": 4.0,
+                "subPrice": 3.0,
+                "similarityScore": 85,
+                "amazonLink": null
+            },
+            {
+                "name": "Clams or Mussels (fresh or frozen)",
+                "category": "Local Mart",
+                "amount": 100,
+                "unit": "g",
+                "substitute": "Canned clams with their broth (adds extra seafood depth)",
+                "subReason": "Clams add a seafood sweetness and mineral richness that elevates the broth. Canned clams (with liquid included) actually intensify seafood flavor more than fresh in a quick stew.",
+                "origPrice": 4.0,
+                "subPrice": 2.0,
+                "similarityScore": 80,
+                "amazonLink": null
+            },
+            {
+                "name": "Gochugaru (Korean Chili Flakes)",
+                "category": "Korean Mart",
+                "amount": 30,
+                "unit": "ml",
+                "substitute": "2 tsp sweet paprika + 1.5 tsp cayenne pepper",
+                "subReason": "Gochugaru is the soul of this dish — it provides color, heat, and unique fruity depth. The paprika + cayenne substitute achieves the color and heat but misses the fruity sweetness. Still delicious.",
+                "origPrice": 3.0,
+                "subPrice": 0.8,
+                "similarityScore": 74,
+                "amazonLink": "https://www.amazon.com/s?k=gochugaru"
+            },
+            {
+                "name": "Gochujang (Korean Chili Paste)",
+                "category": "Korean Mart",
+                "amount": 15,
+                "unit": "ml",
+                "substitute": "1 tbsp sriracha + 1/2 tsp miso",
+                "subReason": "A small amount of gochujang deepens and thickens the broth. Sriracha + miso provides both the heat and fermented body.",
+                "origPrice": 3.0,
+                "subPrice": 1.0,
+                "similarityScore": 78,
+                "amazonLink": "https://www.amazon.com/s?k=gochujang"
+            },
+            {
+                "name": "Garlic (minced)",
+                "category": "Local Mart",
+                "amount": 15,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.5,
+                "subPrice": 0.5,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Anchovy or Seafood Stock",
+                "category": "Korean Mart",
+                "amount": 350,
+                "unit": "ml",
+                "substitute": "Chicken stock (low sodium) or dashi stock",
+                "subReason": "Anchovy stock provides the umami sea-depth that the broth needs. Dashi (Japanese bonito stock) is the best substitute — also available widely. Low-sodium chicken stock works in a pinch but loses some depth.",
+                "origPrice": 1.5,
+                "subPrice": 1.0,
+                "similarityScore": 78,
+                "amazonLink": "https://www.amazon.com/s?k=korean+anchovy+broth+stock"
+            },
+            {
+                "name": "Sesame Oil",
+                "category": "Local Mart",
+                "amount": 10,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.8,
+                "subPrice": 0.8,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Egg",
+                "category": "Local Mart",
+                "amount": 1,
+                "unit": "unit",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.3,
+                "subPrice": 0.3,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Green Onion (sliced)",
+                "category": "Local Mart",
+                "amount": 30,
+                "unit": "g",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.4,
+                "subPrice": 0.4,
+                "similarityScore": null,
+                "amazonLink": null
+            }
+        ],
+        "tools": [
+            {
+                "name": "Dolsot (Korean Stone Pot / Earthenware Ttukbaegi)",
+                "substitute": "Small cast iron pot or any small heavy pot — preheat on the stove for 3 minutes before adding ingredients for an authentic experience",
+                "amazonLink": "https://www.amazon.com/s?k=korean+stone+pot+dolsot"
+            }
+        ],
+        "steps": [
+            "Heat 1 tsp sesame oil in the stone pot (or small heavy pot) over medium-high heat. Add pork belly pieces and stir-fry for 2-3 minutes until the edges begin to brown and fat renders out. The rendered fat is what carries the gochugaru flavor — do not skip this step.",
+            "Add minced garlic to the pork and stir-fry 30 seconds until fragrant. Add gochugaru directly to the rendered pork fat in the pot — stir and cook for 1 minute to bloom the spice. The color will turn to a vivid red-orange. Add gochujang and stir.",
+            "Pour in the anchovy stock (or substitute). Bring to a rolling boil. Add the clams/mussels. Cook for 3 minutes until clams open (discard any that don't open). If using canned clams, add them now with their liquid.",
+            "Lower heat to a strong simmer. Gently add the soft tofu by spooning large chunks directly from the package. Do NOT stir — simply nestle the tofu into the broth. Let it warm through for 3 minutes undisturbed.",
+            "Taste the broth and adjust seasoning: more gochugaru for heat and color, a pinch of salt if needed. The broth should be strongly savory and spicy.",
+            "Scatter sliced green onion on top. Crack the raw egg directly into the center of the stew at the table — the residual heat from the boiling stone pot will gently cook the white while keeping the yolk runny.",
+            "Serve immediately, still bubbling, directly in the stone pot alongside steamed rice. The correct way to eat: break the egg yolk, mix the runny yolk into the stew, then eat the tofu and protein with spoonfuls of the broth over rice."
+        ]
+    },
+    {
+        "id": "samgyeopsal",
+        "title": "Samgyeopsal (Korean Grilled Pork Belly)",
+        "description": "The most beloved Korean BBQ experience — thick slices of unseasoned pork belly grilled at the table over high heat, eaten wrapped in fresh lettuce with ssamjang paste, raw garlic, sliced green peppers, and kimchi. This is a social ritual as much as a meal. The simplicity is the point: the quality of the pork belly and the art of the ssamjang transform just three ingredients into something extraordinary.",
+        "image": "/images/samgyeopsal.png",
+        "cookTime": "20 min",
+        "difficulty": "Beginner",
+        "servings": 2,
+        "pantryLevel": 2,
+        "textureCheck": "The pork belly should be cut to exactly 1cm thick — grocery-store pre-sliced bacon is too thin, butcher-cut is ideal. The char marks should be deep amber to dark brown at the edges, with the fat rendered fully translucent. Undercooked samgyeopsal will be chewy and unappetizing — cook until the fat is visibly rendered and the meat has a slight pull-back at the edges. The ssamjang should be thick enough to mound on a spoon without dripping.",
+        "ingredients": [
+            {
+                "name": "Pork Belly (skin-on, 1cm thick slices)",
+                "category": "Local Mart",
+                "amount": 500,
+                "unit": "g",
+                "substitute": "Thick-cut uncured pork bacon (not regular breakfast bacon — too thin and smoked)",
+                "subReason": "The key is thickness and unsmoked pork. Standard breakfast bacon has a smoke flavor that clashes with the fresh ssam vegetables. Source a butcher who can slice pork belly to 1cm thickness for the authentic experience.",
+                "origPrice": 10.0,
+                "subPrice": 7.0,
+                "similarityScore": 78,
+                "amazonLink": null
+            },
+            {
+                "name": "Fresh Lettuce (butter lettuce or Perilla/Kkaennip)",
+                "category": "Local Mart",
+                "amount": 1,
+                "unit": "head",
+                "substitute": "Any fresh, pliable lettuce leaves — romaine outer leaves, green leaf lettuce",
+                "subReason": "The lettuce is the wrap (ssam) — it needs to be large enough to wrap around a piece of meat and sturdy enough not to tear. Butter lettuce is ideal. Perilla leaf (kkaennip) has a distinctive anise flavor if you can find it.",
+                "origPrice": 2.5,
+                "subPrice": 2.5,
+                "similarityScore": 90,
+                "amazonLink": null
+            },
+            {
+                "name": "Doenjang (Korean Soybean Paste)",
+                "category": "Korean Mart",
+                "amount": 45,
+                "unit": "ml",
+                "substitute": "Extra-dark Japanese miso paste (not white miso — use red/dark variety)",
+                "subReason": "Doenjang is earthier and more pungent than Japanese miso. For ssamjang, you need the bold, savory base that only a dark paste provides. White miso is too mild and sweet.",
+                "origPrice": 3.5,
+                "subPrice": 2.5,
+                "similarityScore": 72,
+                "amazonLink": "https://www.amazon.com/s?k=doenjang+korean+soybean+paste"
+            },
+            {
+                "name": "Gochujang (Korean Chili Paste)",
+                "category": "Korean Mart",
+                "amount": 30,
+                "unit": "ml",
+                "substitute": "1.5 tbsp sriracha + 1 tbsp tomato paste",
+                "subReason": "Gochujang makes up 40% of the ssamjang. Sriracha + tomato paste creates similar heat, sweetness, and body but will lack the fermented complexity. Still works well as a quick substitute.",
+                "origPrice": 3.0,
+                "subPrice": 1.5,
+                "similarityScore": 76,
+                "amazonLink": "https://www.amazon.com/s?k=gochujang"
+            },
+            {
+                "name": "Sesame Oil",
+                "category": "Local Mart",
+                "amount": 10,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.8,
+                "subPrice": 0.8,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Garlic (minced, for ssamjang + whole raw cloves to grill)",
+                "category": "Local Mart",
+                "amount": 6,
+                "unit": "clove",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.5,
+                "subPrice": 0.5,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Sugar",
+                "category": "Local Mart",
+                "amount": 10,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.1,
+                "subPrice": 0.1,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Sesame Seeds",
+                "category": "Local Mart",
+                "amount": 10,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.5,
+                "subPrice": 0.5,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Green Peppers or Jalapeños (sliced, for serving)",
+                "category": "Local Mart",
+                "amount": 3,
+                "unit": "unit",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.8,
+                "subPrice": 0.8,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Kimchi (for serving)",
+                "category": "Korean Mart",
+                "amount": 100,
+                "unit": "g",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 2.0,
+                "subPrice": 2.0,
+                "similarityScore": null,
+                "amazonLink": null
+            }
+        ],
+        "tools": [
+            {
+                "name": "Tabletop Grill or Electric Griddle",
+                "substitute": "Cast iron skillet on the stovetop — heat to high heat before adding pork. Open a window, use the exhaust fan (samgyeopsal produces a lot of smoke)",
+                "amazonLink": "https://www.amazon.com/s?k=korean+bbq+grill+tabletop"
+            },
+            {
+                "name": "Kitchen Scissors",
+                "substitute": "Sharp knife — Koreans traditionally use scissors to cut the cooked samgyeopsal into bite-sized pieces directly on the grill",
+                "amazonLink": "https://www.amazon.com/s?k=kitchen+scissors"
+            }
+        ],
+        "steps": [
+            "Make the ssamjang (dipping sauce): Combine doenjang, gochujang, sesame oil, minced garlic (2 cloves), sugar, and sesame seeds in a bowl. Mix vigorously until smooth and unified. Taste — it should be intensely savory, spicy, and just slightly sweet. This sauce is the heart of samgyeopsal — make it 30 minutes ahead if possible to let flavors meld.",
+            "Prepare the ssam banchan (wrap side table): Arrange separated lettuce leaves in a pile. Set out sliced green peppers, whole raw garlic cloves, kimchi, and the ssamjang bowl in the center of the table.",
+            "Preheat your grill to high heat. For cast iron: heat for 5 minutes on high until a drop of water evaporates immediately.",
+            "Grill the pork belly: Place slices directly on the grill — no oil needed, the pork has enough fat. Cook undisturbed for 3-4 minutes per side until the fat renders and the edges are deeply caramelized. Simultaneously grill whole garlic cloves alongside the pork. Cook garlic until golden and softened (5-6 minutes total).",
+            "Once cooked, use kitchen scissors to cut the pork belly into bite-sized pieces directly on the grill. This is a uniquely Korean technique and part of the experience.",
+            "Build the ssam (wrap): Hold a lettuce leaf in your palm. Add a piece of pork belly, a grilled garlic clove, a slice of kimchi, a sliced green pepper, and a small dollop of ssamjang.",
+            "Fold the lettuce around everything and eat in one bold bite — a ssam is never eaten in two bites. The combination of hot, fatty pork + cool lettuce + pungent ssamjang + acid from kimchi is extraordinary.",
+            "Keep grilling and wrapping throughout the meal — samgyeopsal is eaten continuously over 30-45 minutes. Order extra pork belly. Always."
+        ]
     }
 ]

@@ -4220,5 +4220,636 @@
             "Fold the lettuce around everything and eat in one bold bite — a ssam is never eaten in two bites. The combination of hot, fatty pork + cool lettuce + pungent ssamjang + acid from kimchi is extraordinary.",
             "Keep grilling and wrapping throughout the meal — samgyeopsal is eaten continuously over 30-45 minutes. Order extra pork belly. Always."
         ]
+    },
+    {
+        "id": "kkaennip-jangajji",
+        "title": "Kkaennip Jang-ajji (Perilla Leaf Pickles)",
+        "description": "A classic Korean side dish made by marinating perilla leaves in a savory, aromatic soy-based sauce.",
+        "image": "/images/kkaennip_jangajji.png",
+        "cookTime": "1.5 - 2 Hours",
+        "difficulty": "Medium",
+        "servings": 2,
+        "pantryLevel": 2,
+        "textureCheck": "The leaves should be soft but retain a slight bite, fully infused with the savory soy marinade.",
+        "ingredients": [
+            {
+                "name": "Perilla Leaves",
+                "category": "Korean Mart",
+                "amount": 400,
+                "unit": "g",
+                "substitute": "Shiso or a mix of Mint and Basil",
+                "subReason": "Shiso has a similar shape/texture; Mint/Basil mix provides a comparable aromatic profile.",
+                "origPrice": 5.0,
+                "subPrice": 3.0,
+                "similarityScore": 85,
+                "amazonLink": null
+            },
+            {
+                "name": "Dark Soy Sauce",
+                "category": "Local Mart",
+                "amount": 500,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 3.0,
+                "subPrice": 3.0,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Anchovy Broth",
+                "category": "Korean Mart",
+                "amount": 500,
+                "unit": "ml",
+                "substitute": "Dashi or Fish sauce + water",
+                "subReason": "Provides the required seafood umami depth.",
+                "origPrice": 4.0,
+                "subPrice": 2.5,
+                "similarityScore": 90,
+                "amazonLink": null
+            },
+            {
+                "name": "Fish Sauce",
+                "category": "Local Mart",
+                "amount": 60,
+                "unit": "ml",
+                "substitute": "Soy sauce + salt",
+                "subReason": "Fish sauce gives depth, but extra soy sauce and salt can compensate.",
+                "origPrice": 2.5,
+                "subPrice": 1.0,
+                "similarityScore": 75,
+                "amazonLink": null
+            },
+            {
+                "name": "Vinegar",
+                "category": "Local Mart",
+                "amount": 75,
+                "unit": "ml",
+                "substitute": "Rice vinegar or Apple cider vinegar",
+                "subReason": "For the necessary acidic kick in the pickling brine.",
+                "origPrice": 1.5,
+                "subPrice": 1.5,
+                "similarityScore": 95,
+                "amazonLink": null
+            },
+            {
+                "name": "Scallions/Leeks (minced)",
+                "category": "Local Mart",
+                "amount": 60,
+                "unit": "g",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 1.0,
+                "subPrice": 1.0,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Cheongyang Chili (minced)",
+                "category": "Korean Mart",
+                "amount": 60,
+                "unit": "g",
+                "substitute": "Thai chili or Jalapeno",
+                "subReason": "For the sharp, clean heat characteristic of Korean green chilies.",
+                "origPrice": 2.0,
+                "subPrice": 1.5,
+                "similarityScore": 85,
+                "amazonLink": null
+            },
+            {
+                "name": "Gochugaru",
+                "category": "Korean Mart",
+                "amount": 30,
+                "unit": "g",
+                "substitute": "Aleppo pepper or Paprika + Cayenne mix",
+                "subReason": "For color and earthy heat.",
+                "origPrice": 3.0,
+                "subPrice": 1.5,
+                "similarityScore": 80,
+                "amazonLink": null
+            },
+            {
+                "name": "Syrup/Honey",
+                "category": "Local Mart",
+                "amount": 75,
+                "unit": "ml",
+                "substitute": "Honey or Maple syrup",
+                "subReason": "To balance the salt and acid with sweetness.",
+                "origPrice": 2.0,
+                "subPrice": 2.0,
+                "similarityScore": 95,
+                "amazonLink": null
+            },
+            {
+                "name": "Minced Garlic",
+                "category": "Local Mart",
+                "amount": 30,
+                "unit": "g",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.5,
+                "subPrice": 0.5,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Sesame Seeds",
+                "category": "Local Mart",
+                "amount": 45,
+                "unit": "g",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 1.5,
+                "subPrice": 1.5,
+                "similarityScore": null,
+                "amazonLink": null
+            }
+        ],
+        "tools": [
+            {
+                "name": "Airtight Glass Container",
+                "substitute": "Any pickling jar or Tupperware",
+                "amazonLink": null
+            }
+        ],
+        "steps": [
+            "Wash perilla leaves thoroughly, drain well, and stack them neatly in groups of five.",
+            "In a pot, combine soy sauce, broth, fish sauce, and vinegar. Bring to a boil to create the pickling liquid.",
+            "Pour the hot liquid over the stacked leaves in a heatproof container. Let sit for 30 minutes, then flip the stacks over and let sit for another 30 minutes.",
+            "Carefully squeeze out the excess pickling liquid from the leaves back into a bowl.",
+            "Mix the remaining seasonings (minced chili, garlic, ginger, scallions, gochugaru, syrup, sesame seeds) into the leftover pickling liquid to create a paste.",
+            "Spread about a teaspoon of the seasoning paste between every five leaves. Cover and let it age in the refrigerator for 1-2 days before serving."
+        ]
+    },
+    {
+        "id": "gochujang-yukhoe",
+        "title": "Gochujang Yukhoe (Beef Tartare)",
+        "description": "Korean-style raw beef seasoned with a spicy and sweet gochujang-based sauce, served with refreshing pear.",
+        "image": "/images/gochujang_yukhoe.png",
+        "cookTime": "25 min",
+        "difficulty": "Easy",
+        "servings": 2,
+        "pantryLevel": 2,
+        "textureCheck": "The beef should be tender and incredibly fresh, contrasting with the crisp sweetness of the pear matchsticks and the richness of the raw egg yolk.",
+        "ingredients": [
+            {
+                "name": "Beef Eye of Round",
+                "category": "Local Mart",
+                "amount": 300,
+                "unit": "g",
+                "substitute": "Beef Sirloin or Fillet",
+                "subReason": "Lean, high-quality, and extremely fresh cuts are absolutely essential for raw consumption.",
+                "origPrice": 15.0,
+                "subPrice": 18.0,
+                "similarityScore": 95,
+                "amazonLink": null
+            },
+            {
+                "name": "Korean Pear",
+                "category": "Korean Mart",
+                "amount": 150,
+                "unit": "g",
+                "substitute": "Crisp Apple (e.g., Fuji)",
+                "subReason": "Provides the crisp, refreshing sweetness needed to balance the rich meat.",
+                "origPrice": 3.0,
+                "subPrice": 1.0,
+                "similarityScore": 85,
+                "amazonLink": null
+            },
+            {
+                "name": "Gochujang",
+                "category": "Korean Mart",
+                "amount": 15,
+                "unit": "ml",
+                "substitute": "Miso + Sriracha",
+                "subReason": "Replicates the fermented depth and spicy, sweet punch.",
+                "origPrice": 2.0,
+                "subPrice": 1.0,
+                "similarityScore": 75,
+                "amazonLink": null
+            },
+            {
+                "name": "Soy Sauce",
+                "category": "Local Mart",
+                "amount": 30,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.5,
+                "subPrice": 0.5,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Sesame Oil",
+                "category": "Local Mart",
+                "amount": 30,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 1.0,
+                "subPrice": 1.0,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Mirin",
+                "category": "Local Mart",
+                "amount": 15,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.5,
+                "subPrice": 0.5,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Honey",
+                "category": "Local Mart",
+                "amount": 15,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.5,
+                "subPrice": 0.5,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Garlic (minced)",
+                "category": "Local Mart",
+                "amount": 15,
+                "unit": "g",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.5,
+                "subPrice": 0.5,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Scallions",
+                "category": "Local Mart",
+                "amount": 20,
+                "unit": "g",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.5,
+                "subPrice": 0.5,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Sesame Seeds",
+                "category": "Local Mart",
+                "amount": 30,
+                "unit": "g",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 1.0,
+                "subPrice": 1.0,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Raw Egg Yolk",
+                "category": "Local Mart",
+                "amount": 1,
+                "unit": "unit",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.5,
+                "subPrice": 0.5,
+                "similarityScore": null,
+                "amazonLink": null
+            }
+        ],
+        "tools": [
+            {
+                "name": "Very Sharp Knife",
+                "substitute": "Chill the beef in the freezer for 20 mins before slicing for easier cutting.",
+                "amazonLink": null
+            }
+        ],
+        "steps": [
+            "Use a paper towel to thoroughly dab any excess blood or moisture off the beef.",
+            "Slice the beef into very thin 0.5cm strips. Ensure your knife is sharp to avoid tearing the meat.",
+            "Peel the pear (or crisp apple) and slice it into thin, even matchsticks. Arrange them in a circle on your serving plate.",
+            "In a mixing bowl, combine soy sauce, mirin, sesame oil, gochujang, honey, minced garlic, scallions, and sesame seeds to create the sauce.",
+            "Add the beef strips to the bowl and gently toss until evenly coated with the gochujang sauce. Do this right before serving to maintain texture.",
+            "Place the seasoned beef neatly on top of the pear matchsticks.",
+            "Create a small indentation in the center of the beef and gently place the raw egg yolk. Break the yolk and mix right before eating."
+        ]
+    },
+    {
+        "id": "nabak-kimchi",
+        "title": "Nabak Kimchi (Water Kimchi)",
+        "description": "A refreshing, cold water kimchi with crisp vegetables in a slightly tangy, vibrant red broth.",
+        "image": "/images/nabak_kimchi.png",
+        "cookTime": "30 min + 24hr fermentation",
+        "difficulty": "Medium",
+        "servings": 4,
+        "pantryLevel": 3,
+        "textureCheck": "The broth should be clear and mildly tangy like a refreshing drink. The radish and cabbage squares must be extremely crisp.",
+        "ingredients": [
+            {
+                "name": "Korean Radish (Mu)",
+                "category": "Korean Mart",
+                "amount": 300,
+                "unit": "g",
+                "substitute": "Daikon Radish",
+                "subReason": "Daikon is slightly more watery but provides identical crunch and flavor.",
+                "origPrice": 2.5,
+                "subPrice": 1.5,
+                "similarityScore": 95,
+                "amazonLink": null
+            },
+            {
+                "name": "Napa Cabbage",
+                "category": "Local Mart",
+                "amount": 200,
+                "unit": "g",
+                "substitute": "Savoy Cabbage",
+                "subReason": "Savoy cabbage provides a similar tender yet crunchy texture for water kimchi.",
+                "origPrice": 2.0,
+                "subPrice": 2.0,
+                "similarityScore": 90,
+                "amazonLink": null
+            },
+            {
+                "name": "Gochugaru",
+                "category": "Korean Mart",
+                "amount": 30,
+                "unit": "g",
+                "substitute": "Paprika + Cayenne mix",
+                "subReason": "We only need it for the color and mild heat. Since we strain it, the flake texture doesn't matter.",
+                "origPrice": 2.0,
+                "subPrice": 1.0,
+                "similarityScore": 85,
+                "amazonLink": null
+            },
+            {
+                "name": "Salted Shrimp (Saeu-jeot)",
+                "category": "Korean Mart",
+                "amount": 15,
+                "unit": "g",
+                "substitute": "Fish sauce or Sea salt + splash of soy sauce",
+                "subReason": "Provides the essential umami depth for the fermentation process.",
+                "origPrice": 4.5,
+                "subPrice": 1.5,
+                "similarityScore": 80,
+                "amazonLink": "https://www.amazon.com/s?k=saeu+jeot"
+            },
+            {
+                "name": "Glutinous Rice Flour",
+                "category": "Korean Mart",
+                "amount": 15,
+                "unit": "g",
+                "substitute": "Rice flour or Cornstarch",
+                "subReason": "Used to create a starchy broth base that feeds the fermentation bacteria.",
+                "origPrice": 3.0,
+                "subPrice": 1.0,
+                "similarityScore": 90,
+                "amazonLink": null
+            },
+            {
+                "name": "Salt",
+                "category": "Local Mart",
+                "amount": 30,
+                "unit": "g",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.5,
+                "subPrice": 0.5,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Aromatics (Scallions, Garlic, Ginger, Chilies)",
+                "category": "Local Mart",
+                "amount": 100,
+                "unit": "g",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 2.0,
+                "subPrice": 2.0,
+                "similarityScore": null,
+                "amazonLink": null
+            }
+        ],
+        "tools": [
+            {
+                "name": "Fine Mesh Strainer or Cheesecloth",
+                "substitute": "Needed to strain the chili powder for a clear broth.",
+                "amazonLink": null
+            }
+        ],
+        "steps": [
+            "Cut the radish and cabbage into uniform 2x2cm squares. Sprinkle with salt, toss well, and let sit for 20 minutes to draw out moisture.",
+            "Make a thin 'porridge' by whisking the glutinous rice flour with a cup of water. Bring to a boil until slightly thickened, then let it cool completely.",
+            "Place the gochugaru (chili powder) in a fine mesh strainer or cheesecloth and steep it in 4 cups of water. Massage it to extract a vibrant, clear red broth without leaving any gritty flakes.",
+            "Combine the cooled rice porridge, the strained red broth, and the juice from the salted shrimp (minced finely).",
+            "Do not rinse the salted vegetables. Pour the combined aromatic broth directly over them in a large container.",
+            "Slice the scallions, garlic, ginger, and chilies thinly and add them to the broth.",
+            "Leave the container at room temperature for 1 full day to kickstart fermentation (it should smell slightly tangy), then move it to the refrigerator. Serve chilled."
+        ]
+    },
+    {
+        "id": "minari-jangajji",
+        "title": "Minari Jang-ajji (Water Dropwort Pickles)",
+        "description": "Crunchy stems of water dropwort pickled in a simple sweet-and-sour brine, perfect for balancing fatty meats.",
+        "image": "/images/minari_jangajji.png",
+        "cookTime": "15 min",
+        "difficulty": "Easy",
+        "servings": 4,
+        "pantryLevel": 1,
+        "textureCheck": "The stems must remain incredibly crisp and crunchy, snapping easily when bitten, infused with the sweet and sour taste.",
+        "ingredients": [
+            {
+                "name": "Minari (Water Dropwort)",
+                "category": "Korean Mart",
+                "amount": 200,
+                "unit": "g",
+                "substitute": "Celery stems or Parsley stems",
+                "subReason": "Provides a similar satisfying crunch and a comparable herbal, refreshing aroma.",
+                "origPrice": 4.5,
+                "subPrice": 2.0,
+                "similarityScore": 85,
+                "amazonLink": null
+            },
+            {
+                "name": "Soy Sauce",
+                "category": "Local Mart",
+                "amount": 100,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 1.0,
+                "subPrice": 1.0,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Vinegar",
+                "category": "Local Mart",
+                "amount": 100,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 1.0,
+                "subPrice": 1.0,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Sugar",
+                "category": "Local Mart",
+                "amount": 100,
+                "unit": "g",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.8,
+                "subPrice": 0.8,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Water",
+                "category": "Local Mart",
+                "amount": 100,
+                "unit": "ml",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.0,
+                "subPrice": 0.0,
+                "similarityScore": null,
+                "amazonLink": null
+            }
+        ],
+        "tools": [],
+        "steps": [
+            "Wash the minari (or celery/parsley stems) thoroughly under cold running water. Remove any wilted leaves.",
+            "Cut the stems into even, 5cm (2-inch) pieces. Place them in a heatproof glass jar or container.",
+            "In a saucepan, combine the soy sauce, sugar, water, and vinegar (a 1:1:1:1 ratio). Bring the mixture to a rolling boil until the sugar is completely dissolved.",
+            "Carefully pour the boiling hot brine directly over the cut stems. The hot liquid flash-cooks the stems slightly while preserving their crunch.",
+            "Let the jar sit at room temperature until fully cooled.",
+            "Seal and store in the refrigerator. The pickles are ready to eat after 1 to 2 days."
+        ]
+    },
+    {
+        "id": "nurungji-baeksuk",
+        "title": "Nurungji Baeksuk (Chicken with Scorched Rice)",
+        "description": "A hearty, slow-cooked whole chicken served on a layer of nutty, crispy scorched rice porridge.",
+        "image": "/images/nurungji_baeksuk.png",
+        "cookTime": "1.5 - 2 Hours",
+        "difficulty": "Medium",
+        "servings": 3,
+        "pantryLevel": 2,
+        "textureCheck": "The chicken meat should easily fall off the bone. The rice layer at the bottom must be deeply colored, chewy, and scorched (nurungji) without being burnt, providing a nutty contrast to the rich broth.",
+        "ingredients": [
+            {
+                "name": "Whole Chicken",
+                "category": "Local Mart",
+                "amount": 1,
+                "unit": "whole (about 1.2kg)",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 8.0,
+                "subPrice": 8.0,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Glutinous Rice",
+                "category": "Korean Mart",
+                "amount": 200,
+                "unit": "g",
+                "substitute": "Short-grain sticky rice or regular rice + a pinch of starch",
+                "subReason": "Necessary for achieving the thick, sticky, and chewy scorched texture at the bottom.",
+                "origPrice": 3.0,
+                "subPrice": 2.0,
+                "similarityScore": 90,
+                "amazonLink": "https://www.amazon.com/s?k=sweet+rice"
+            },
+            {
+                "name": "Ginseng Root",
+                "category": "Korean Mart",
+                "amount": 1,
+                "unit": "root",
+                "substitute": "Parsnip or extra Ginger",
+                "subReason": "For the distinct earthy herbal nature of Korean chicken soups. Parsnip provides a similar earthy sweetness.",
+                "origPrice": 6.0,
+                "subPrice": 1.5,
+                "similarityScore": 75,
+                "amazonLink": "https://www.amazon.com/s?k=dried+ginseng+root"
+            },
+            {
+                "name": "Dried Jujube (Dates)",
+                "category": "Korean Mart",
+                "amount": 5,
+                "unit": "pieces",
+                "substitute": "Dried Dates",
+                "subReason": "To add a subtle sweetness and dark earthy color to the broth.",
+                "origPrice": 3.0,
+                "subPrice": 2.0,
+                "similarityScore": 95,
+                "amazonLink": null
+            },
+            {
+                "name": "Garlic (whole cloves)",
+                "category": "Local Mart",
+                "amount": 10,
+                "unit": "cloves",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 1.0,
+                "subPrice": 1.0,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Ginger (sliced)",
+                "category": "Local Mart",
+                "amount": 3,
+                "unit": "slices",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.5,
+                "subPrice": 0.5,
+                "similarityScore": null,
+                "amazonLink": null
+            },
+            {
+                "name": "Scallions",
+                "category": "Local Mart",
+                "amount": 50,
+                "unit": "g",
+                "substitute": null,
+                "subReason": null,
+                "origPrice": 0.5,
+                "subPrice": 0.5,
+                "similarityScore": null,
+                "amazonLink": null
+            }
+        ],
+        "tools": [
+            {
+                "name": "Pressure Cooker or Heavy Dutch Oven",
+                "substitute": "Essential to break down the chicken quickly and scorch the rice evenly.",
+                "amazonLink": "https://www.amazon.com/s?k=pressure+cooker"
+            }
+        ],
+        "steps": [
+            "Wash the glutinous rice thoroughly and let it soak in cold water for at least 1 hour.",
+            "Clean the whole chicken, removing any excess fat near the tail.",
+            "Stuff the cavity of the chicken with half of the whole garlic cloves, the ginger slices, and the jujubes (or dates).",
+            "Drain the soaked rice and spread it evenly across the bottom of your pressure cooker or heavy pot.",
+            "Carefully place the stuffed chicken directly on top of the rice layer. Add the remaining garlic, scallions, and ginseng (or parsnip) around it.",
+            "Add enough water to cover the chicken halfway (do not fully submerge).",
+            "Cook on high pressure/heat until boiling, then lower to a simmer. In a pressure cooker, this takes about 40 minutes. In a regular pot, about 1.5 hours.",
+            "Once the chicken is tender, continue cooking uncovered on medium heat until the water reduces and the rice at the bottom fries in the chicken fat, forming a golden, crispy 'nurungji' (scorched) layer (about 10-15 mins). Watch closely so it doesn't burn.",
+            "Serve immediately by scooping the tender chicken along with chunks of the crispy, nutty rice. Serve salt and pepper on the side for dipping the meat."
+        ]
     }
 ]

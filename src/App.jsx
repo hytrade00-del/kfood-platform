@@ -508,10 +508,10 @@ const App = () => {
               <div style={{ background: 'white', borderRadius: '20px', padding: '2.5rem', boxShadow: 'var(--shadow)', marginBottom: '2rem' }}>
                 <h2 style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--primary)' }}>🌍 Who We Are</h2>
                 <p style={{ lineHeight: 1.9, color: '#444', marginBottom: '1rem' }}>
-                  We are a team of Korean food enthusiasts and home cooks who have lived and cooked in various countries around the world. Through years of experimentation, we've developed a deep understanding of which ingredient swaps work — and which don't.
+                  I am just an individual who loves cooking and Korean cuisine. Having lived and cooked in different places, I realized how hard it can be to find authentic Korean ingredients at local supermarkets without spending a fortune. K-Food Global is my personal project to help make authentic-tasting Korean food easily accessible to everyone.
                 </p>
                 <p style={{ lineHeight: 1.9, color: '#444' }}>
-                  Our substitution recommendations come from real cooking experience, taste tests with actual home cooks, and research from food science communities. Every substitute on our platform has been rated for taste similarity and cost savings.
+                  Through trial and error in my own kitchen, I've gathered the most practical ingredient substitutes. My goal is to share these simple, everyday swaps so anyone can enjoy cooking delicious Korean food at home with ease.
                 </p>
               </div>
 

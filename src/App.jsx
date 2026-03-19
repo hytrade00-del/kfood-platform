@@ -63,14 +63,21 @@ const DisqusComments = ({ recipeId }) => {
 };
 
 const App = () => {
-  const [activeTab, setActiveTab] = useState('recipes'); // 'recipes', 'substitutes', or 'about'
+  const [activeTab, setActiveTab] = useState('recipes'); // 'recipes', 'substitutes', 'about', 'privacy', 'terms'
   const [selectedRecipeId, setSelectedRecipeId] = useState(""); // EMPTY by default to show catalog
   const [servings, setServings] = useState(2);
   const [isMetric, setIsMetric] = useState(true);
   const [searchTerm, setSearchTerm] = useState("");
   const [email, setEmail] = useState("");
-  const [showPrivacy, setShowPrivacy] = useState(false);
   const [showContact, setShowContact] = useState(false);
+  const [showCookieBanner, setShowCookieBanner] = useState(false);
+
+  useEffect(() => {
+    const consent = localStorage.getItem('kfood_cookie_consent');
+    if (!consent) {
+      setShowCookieBanner(true);
+    }
+  }, []);
 
 
   const recipe = useMemo(() =>
@@ -104,9 +111,11 @@ const App = () => {
         setActiveTab('about');
         setSelectedRecipeId("");
       } else if (path === '/privacy') {
-        setActiveTab('recipes');
+        setActiveTab('privacy');
         setSelectedRecipeId("");
-        setShowPrivacy(true);
+      } else if (path === '/terms') {
+        setActiveTab('terms');
+        setSelectedRecipeId("");
       } else {
         setActiveTab('recipes');
         setSelectedRecipeId("");
@@ -144,10 +153,14 @@ const App = () => {
       title = 'Ingredient Substitutes Board | K-Food Global';
       desc = 'Find smart Korean ingredient substitutes. Compare costs and taste match scores to cook authentic Korean food with local supermarket ingredients.';
       urlPath = '/substitutes';
-    } else if (showPrivacy) {
+    } else if (activeTab === 'privacy') {
       title = 'Privacy Policy | K-Food Global';
-      desc = 'Read our privacy policy to understand how K-Food Global handles your information.';
+      desc = 'Read our privacy policy to understand how K-Food Global handles your information and cookies.';
       urlPath = '/privacy';
+    } else if (activeTab === 'terms') {
+      title = 'Terms of Service | K-Food Global';
+      desc = 'Read the terms of service and conditions for using the K-Food Global platform.';
+      urlPath = '/terms';
     } else {
       title = 'K-Food Global | Authentic Korean Recipes for Home Cooks Worldwide';
       desc = 'Discover authentic Korean recipes with smart ingredient substitutes. Cook Kimchi Jjigae, Bulgogi, Bibimbap and more — with local supermarket alternatives that taste just as good.';
@@ -169,7 +182,7 @@ const App = () => {
     if (window.location.pathname !== urlPath) {
       window.history.pushState(null, '', urlPath);
     }
-  }, [recipe, activeTab, showPrivacy]);
+  }, [recipe, activeTab]);
 
 
   const filteredRecipes = useMemo(() => {
@@ -475,7 +488,7 @@ const App = () => {
               ))}
             </div>
           </section>
-        ) : (
+        ) : activeTab === 'about' ? (
           /* ===== ABOUT PAGE ===== */
           <section className="about-page" style={{ padding: '4rem 0', maxWidth: '800px', margin: '0 auto' }}>
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
@@ -533,7 +546,82 @@ const App = () => {
               </div>
             </motion.div>
           </section>
-        )}
+        ) : activeTab === 'privacy' ? (
+          /* ===== PRIVACY POLICY PAGE ===== */
+          <section className="legal-page" style={{ padding: '4rem 0', maxWidth: '800px', margin: '0 auto' }}>
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+              <h1 className="section-title" style={{ fontSize: '2.5rem', marginBottom: '1.5rem' }}>Privacy Policy</h1>
+              
+              <div style={{ background: 'white', borderRadius: '20px', padding: '2.5rem', boxShadow: 'var(--shadow)', marginBottom: '2rem' }}>
+                <p style={{ color: '#666', marginBottom: '2rem' }}><strong>Last updated:</strong> March 2026</p>
+                
+                <h2 style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--primary)' }}>1. Information We Collect</h2>
+                <p style={{ lineHeight: 1.9, color: '#444', marginBottom: '1.5rem' }}>
+                  K-Food Global itself does not require account registration or collect personally identifiable information directly. However, we use third-party services like Google AdSense and analytics tools.
+                </p>
+
+                <h2 style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--primary)' }}>2. Cookies and Advertising</h2>
+                <p style={{ lineHeight: 1.9, color: '#444', marginBottom: '1rem' }}>
+                  Third party vendors, including Google, use cookies to serve ads based on a user's prior visits to your website or other websites.
+                </p>
+                <p style={{ lineHeight: 1.9, color: '#444', marginBottom: '1.5rem' }}>
+                  Google's use of advertising cookies enables it and its partners to serve ads to your users based on their visit to your sites and/or other sites on the Internet. Users may opt out of personalized advertising by visiting <a href="https://myadcenter.google.com/" target="_blank" rel="noopener noreferrer">Ads Settings</a>.
+                </p>
+
+                <h2 style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--primary)' }}>3. Third-Party Links & Affiliates</h2>
+                <p style={{ lineHeight: 1.9, color: '#444', marginBottom: '1.5rem' }}>
+                  Our site contains affiliate links to Amazon.com. If you click these links, you will be directed to Amazon, which has its own privacy policy. We are not responsible for the privacy practices of third-party sites.
+                </p>
+
+                <h2 style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--primary)' }}>4. Changes to This Policy</h2>
+                <p style={{ lineHeight: 1.9, color: '#444', marginBottom: '1.5rem' }}>
+                  We reserve the right to update this privacy policy at any time. Changes will be posted on this page with an updated revision date.
+                </p>
+
+                <h2 style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--primary)' }}>5. Contact Us</h2>
+                <p style={{ lineHeight: 1.9, color: '#444' }}>
+                  If you have questions about this privacy policy, please contact us at <a href="mailto:hytrade00@gmail.com" style={{ color: 'var(--primary)', fontWeight: 600 }}>hytrade00@gmail.com</a>.
+                </p>
+              </div>
+            </motion.div>
+          </section>
+        ) : activeTab === 'terms' ? (
+          /* ===== TERMS OF SERVICE PAGE ===== */
+          <section className="legal-page" style={{ padding: '4rem 0', maxWidth: '800px', margin: '0 auto' }}>
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+              <h1 className="section-title" style={{ fontSize: '2.5rem', marginBottom: '1.5rem' }}>Terms of Service</h1>
+              
+              <div style={{ background: 'white', borderRadius: '20px', padding: '2.5rem', boxShadow: 'var(--shadow)', marginBottom: '2rem' }}>
+                <p style={{ color: '#666', marginBottom: '2rem' }}><strong>Last updated:</strong> March 2026</p>
+                
+                <h2 style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--primary)' }}>1. Acceptance of Terms</h2>
+                <p style={{ lineHeight: 1.9, color: '#444', marginBottom: '1.5rem' }}>
+                  By accessing and using K-Food Global (the "Site"), you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.
+                </p>
+
+                <h2 style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--primary)' }}>2. Disclaimer of Warranties</h2>
+                <p style={{ lineHeight: 1.9, color: '#444', marginBottom: '1.5rem' }}>
+                  The materials on K-Food Global's website are provided on an 'as is' basis. K-Food Global makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights. The cooking recipes and substitute suggestions are for informational purposes only. Results may vary, and we are not responsible for any adverse reactions or culinary failures.
+                </p>
+
+                <h2 style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--primary)' }}>3. Intellectual Property</h2>
+                <p style={{ lineHeight: 1.9, color: '#444', marginBottom: '1.5rem' }}>
+                  All custom recipes, texts, graphics, and compilation on this site belong to K-Food Global unless otherwise stated. You may not reproduce, distribute, or create derivative works without explicit written permission.
+                </p>
+
+                <h2 style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--primary)' }}>4. Affiliate Links & Advertising</h2>
+                <p style={{ lineHeight: 1.9, color: '#444', marginBottom: '1.5rem' }}>
+                  K-Food Global may display advertising and use affiliate links. Clicking on these links or purchasing items through them may earn us a small commission. This helps keep the platform free for all users.
+                </p>
+
+                <h2 style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--primary)' }}>5. Governing Law</h2>
+                <p style={{ lineHeight: 1.9, color: '#444' }}>
+                  These terms and conditions are governed by and construed in accordance with standard international website guidelines. Any disputes shall be subject to the exclusive jurisdiction of the competent courts.
+                </p>
+              </div>
+            </motion.div>
+          </section>
+        ) : null}
       </main>
 
       <footer>
@@ -541,8 +629,10 @@ const App = () => {
           <div className="footer-content">
             <div className="logo">🍳 K-FOOD</div>
             <div className="footer-links">
-              <a href="/privacy" onClick={(e) => { e.preventDefault(); setShowPrivacy(true); window.history.pushState(null, '', '/privacy'); }}>Privacy</a>
+              <a href="/privacy" onClick={(e) => { e.preventDefault(); setActiveTab('privacy'); window.history.pushState(null, '', '/privacy'); }}>Privacy Policy</a>
+              <a href="/terms" onClick={(e) => { e.preventDefault(); setActiveTab('terms'); window.history.pushState(null, '', '/terms'); }}>Terms of Service</a>
               <a href="/affiliates">Affiliates</a>
+              <a href="/about" onClick={(e) => { e.preventDefault(); setActiveTab('about'); window.history.pushState(null, '', '/about'); }}>About</a>
               <a href="/contact" onClick={(e) => { e.preventDefault(); setShowContact(true); }}>Contact</a>
             </div>
           </div>
@@ -550,32 +640,7 @@ const App = () => {
         </div>
       </footer>
 
-      {/* Privacy Policy Modal */}
-      <AnimatePresence>
-        {showPrivacy && (
-          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="modal-overlay" onClick={() => setShowPrivacy(false)} style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.6)', zIndex: 1000, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '2rem' }}>
-            <motion.div initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.9, opacity: 0 }} onClick={(e) => e.stopPropagation()} style={{ background: 'white', borderRadius: '20px', padding: '2.5rem', maxWidth: '600px', width: '100%', maxHeight: '80vh', overflowY: 'auto', boxShadow: '0 25px 50px rgba(0,0,0,0.25)' }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
-                <h2 style={{ fontSize: '1.5rem', fontWeight: 700 }}>Privacy Policy</h2>
-                <button onClick={() => { setShowPrivacy(false); window.history.back(); }} style={{ background: 'none', border: 'none', fontSize: '1.5rem', cursor: 'pointer', color: '#999' }}>✕</button>
-              </div>
-              <div style={{ lineHeight: 1.8, color: '#444', fontSize: '0.95rem' }}>
-                <p style={{ marginBottom: '1rem' }}><strong>Last updated:</strong> February 2026</p>
-                <h3 style={{ marginTop: '1.5rem', marginBottom: '0.5rem', color: '#222' }}>1. Information We Collect</h3>
-                <p>K-Food Global does not collect any personal data from users. We do not require account registration, and no cookies or tracking technologies are used on this platform.</p>
-                <h3 style={{ marginTop: '1.5rem', marginBottom: '0.5rem', color: '#222' }}>2. How We Use Information</h3>
-                <p>Since we do not collect personal information, there is no data usage to disclose. Any comments posted on the site are stored locally in your browser and are not transmitted to any server.</p>
-                <h3 style={{ marginTop: '1.5rem', marginBottom: '0.5rem', color: '#222' }}>3. Third-Party Links</h3>
-                <p>Our site may contain affiliate links to Amazon.com. When you click these links, you will be directed to Amazon's website, which has its own privacy policy. We are not responsible for the privacy practices of third-party sites.</p>
-                <h3 style={{ marginTop: '1.5rem', marginBottom: '0.5rem', color: '#222' }}>4. Changes to This Policy</h3>
-                <p>We reserve the right to update this privacy policy at any time. Changes will be posted on this page with an updated revision date.</p>
-                <h3 style={{ marginTop: '1.5rem', marginBottom: '0.5rem', color: '#222' }}>5. Contact Us</h3>
-                <p>If you have questions about this privacy policy, please contact us at <a href="mailto:hytrade00@gmail.com" style={{ color: 'var(--primary)', fontWeight: 600 }}>hytrade00@gmail.com</a>.</p>
-              </div>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {/* Privacy Policy Modal removed in favor of full page */}
 
       {/* Contact Modal */}
       <AnimatePresence>
@@ -591,6 +656,33 @@ const App = () => {
               <a href="mailto:hytrade00@gmail.com" style={{ display: 'inline-block', background: 'var(--primary)', color: 'white', padding: '12px 30px', borderRadius: '30px', textDecoration: 'none', fontWeight: 700, fontSize: '1.1rem', transition: 'transform 0.2s' }}>hytrade00@gmail.com</a>
               <p style={{ marginTop: '1.5rem', color: '#999', fontSize: '0.85rem' }}>We typically respond within 24 hours.</p>
             </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Cookie Banner */}
+      <AnimatePresence>
+        {showCookieBanner && (
+          <motion.div 
+            initial={{ y: 100, opacity: 0 }} 
+            animate={{ y: 0, opacity: 1 }} 
+            exit={{ y: 100, opacity: 0 }} 
+            className="cookie-banner no-print"
+            style={{ position: 'fixed', bottom: 0, left: 0, right: 0, background: '#2d3436', padding: '1rem', zIndex: 2000, boxShadow: '0 -10px 30px rgba(0,0,0,0.1)' }}
+          >
+            <div className="container" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', gap: '20px', flexWrap: 'wrap' }}>
+              <p style={{ color: 'white', margin: 0, fontSize: '0.9rem', lineHeight: 1.5, flex: '1 1 300px' }}>
+                We use cookies to personalize content and ads, provide social media features, and analyze our traffic. We also share information with our advertising and analytics partners.
+                <a href="/privacy" onClick={(e) => { e.preventDefault(); setActiveTab('privacy'); window.history.pushState(null, '', '/privacy'); }} style={{ color: '#f9ca24', marginLeft: '10px', textDecoration: 'underline', fontWeight: 600 }}>Learn more</a>
+              </p>
+              <button 
+                onClick={() => { localStorage.setItem('kfood_cookie_consent', 'true'); setShowCookieBanner(false); }} 
+                className="signup-btn" 
+                style={{ background: 'var(--primary)', flexShrink: 0 }}
+              >
+                Accept All Cookies
+              </button>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

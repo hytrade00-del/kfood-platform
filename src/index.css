@@ -22,7 +22,8 @@ body {
   font-family: 'Inter', 'Outfit', sans-serif;
   background-color: var(--bg-warm);
   color: var(--text-main);
-  line-height: 1.6;
+  line-height: 1.7;
+  font-size: 17px; /* Increased font for readability */
 }
 
 .container {
@@ -230,7 +231,7 @@ header {
 /* Steps */
 .steps-container {
   background: white;
-  padding: 2rem;
+  padding: 2.5rem;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
 }
@@ -238,7 +239,9 @@ header {
 .step-item {
   display: flex;
   gap: 20px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+  font-size: 1.05rem;
 }
 
 .step-num {

@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps, react-hooks/set-state-in-effect, no-unused-vars */
 import React, { useState, useMemo, useEffect } from 'react';
 import {
   Users,
@@ -65,6 +66,7 @@ const DisqusComments = ({ recipeId }) => {
 const App = () => {
   const [activeTab, setActiveTab] = useState('recipes'); // 'recipes', 'substitutes', 'about', 'privacy', 'terms'
   const [selectedRecipeId, setSelectedRecipeId] = useState(""); // EMPTY by default to show catalog
+  const [selectedCategory, setSelectedCategory] = useState("All");
   const [servings, setServings] = useState(2);
   const [isMetric, setIsMetric] = useState(true);
   const [searchTerm, setSearchTerm] = useState("");
@@ -186,12 +188,16 @@ const App = () => {
 
 
   const filteredRecipes = useMemo(() => {
-    if (!searchTerm) return recipesData;
-    return recipesData?.filter(r =>
+    let result = recipesData;
+    if (selectedCategory && selectedCategory !== "All") {
+      result = result?.filter(r => r.category === selectedCategory);
+    }
+    if (!searchTerm) return result || [];
+    return result?.filter(r =>
       r?.title?.toLowerCase()?.includes(searchTerm.toLowerCase()) ||
       r?.ingredients?.some(i => i?.name?.toLowerCase()?.includes(searchTerm.toLowerCase()))
     ) || [];
-  }, [searchTerm]);
+  }, [searchTerm, selectedCategory]);
 
   const formatFraction = (val) => {
     if (val === 0) return "0";
@@ -315,7 +321,30 @@ const App = () => {
           <>
             {!recipe ? (
               <section className="catalog-section" style={{ padding: '4rem 0' }}>
-                <h1 className="section-title" style={{ fontSize: '2.5rem', marginBottom: '3rem', textAlign: 'center' }}>Explore Our Premium Recipes</h1>
+                <h1 className="section-title" style={{ fontSize: '2.5rem', marginBottom: '2rem', textAlign: 'center' }}>Explore Our Premium Recipes</h1>
+                
+                <div className="category-filters" style={{ display: 'flex', justifyContent: 'center', gap: '0.8rem', flexWrap: 'wrap', marginBottom: '3rem' }}>
+                  {["All", "Meat", "Seafood", "Vegetarian", "Side Dish"].map(cat => (
+                    <button 
+                      key={cat}
+                      onClick={() => setSelectedCategory(cat)}
+                      style={{
+                        padding: '10px 20px',
+                        borderRadius: '30px',
+                        border: 'none',
+                        cursor: 'pointer',
+                        fontWeight: '600',
+                        backgroundColor: selectedCategory === cat ? 'var(--primary)' : '#f1f5f9',
+                        color: selectedCategory === cat ? 'white' : '#444',
+                        transition: 'all 0.2s',
+                        boxShadow: selectedCategory === cat ? '0 4px 10px rgba(220, 38, 38, 0.3)' : 'none'
+                      }}
+                    >
+                      {cat}
+                    </button>
+                  ))}
+                </div>
+
                 <div className="recipe-catalog-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '2rem' }}>
                   {filteredRecipes.map(r => (
                     <motion.div
@@ -329,9 +358,14 @@ const App = () => {
                         <img src={r.image} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                       </div>
                       <div style={{ padding: '1.5rem' }}>
-                        <div className="pantry-badge" style={{ backgroundColor: getPantryInfo(r.pantryLevel).color, marginBottom: '10px' }}>
+                        <div className="pantry-badge" style={{ backgroundColor: getPantryInfo(r.pantryLevel).color, marginBottom: '10px', display: 'inline-block', marginRight: '6px' }}>
                           <ChefHat size={12} /> {getPantryInfo(r.pantryLevel).label}
                         </div>
+                        {r.category && (
+                          <div className="category-badge" style={{ backgroundColor: '#f1f5f9', color: '#444', padding: '4px 10px', borderRadius: '15px', fontSize: '0.75rem', fontWeight: 'bold', display: 'inline-block', marginBottom: '10px' }}>
+                            {r.category}
+                          </div>
+                        )}
                         <h3 style={{ fontSize: '1.4rem', marginBottom: '0.5rem' }}>{r.title}</h3>
                         <p style={{ color: '#666', fontSize: '0.9rem', marginBottom: '1rem' }}>{r.description}</p>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', color: 'var(--primary)', fontWeight: 700 }}>
@@ -339,7 +373,7 @@ const App = () => {
                           <ChevronRight size={20} />
                         </div>
                       </div>
-                    </motion.div>
+                    </div>
                   ))}
                 </div>
               </section>

@@ -127,7 +127,9 @@
             "Gently add the soft tofu by spooning it in chunks directly from the package. Do not stir. Let it heat through for 5 minutes.",
             "Add minced garlic in the last 3 minutes of cooking. Finish with a few drops of sesame oil off the heat.",
             "Taste and adjust: more gochugaru for heat, a tiny pinch of sugar to balance sourness. Serve immediately with steamed rice and let the pot continue sizzling at the table."
-        ]
+        ],
+        "storytelling": "A bubbling pot of Kimchi Jjigae is the definition of Korean soul food. It's the ultimate comfort meal we crave after a long day, evoking warm memories of mom's home cooking and family dinners around a shared pot.",
+        "category": "Meat"
     },
     {
         "id": "bulgogi",
@@ -269,7 +271,9 @@
             "Heat a cast iron skillet or grill pan to smoking hot. Do not add oil — the beef has enough fat.",
             "Cook beef in a SINGLE LAYER. Do not crowd the pan. Cook in batches for 1-2 min per side until edges are caramelized and crispy. Remove and repeat.",
             "Top with sesame seeds and sliced green onion. Serve with steamed rice and lettuce leaves for wrapping (ssam style)."
-        ]
+        ],
+        "storytelling": "Bulgogi represents celebration and hospitality in Korean homes. The sweet, savory aroma of marinating beef instantly brings back memories of festive holidays and special family gatherings, meant to be shared generously.",
+        "category": "Meat"
     },
     {
         "id": "bibimbap",
@@ -419,7 +423,9 @@
             "Fry eggs sunny-side up in a small pan — the yolk must remain runny so it coats the rice like a sauce when mixed.",
             "Place a serving of hot rice in a bowl. Arrange each topping in separate sections around the bowl. Place the fried egg in the center. Add 1-2 tbsp of the gochujang sauce on top.",
             "At the table, mix everything together vigorously and eat immediately. The mixing is part of the experience — bibimbap literally means 'mixed rice.'"
-        ]
+        ],
+        "storytelling": "Bibimbap is the beautiful art of Korean harmony in a bowl. Historically eaten on Lunar New Year's Eve to clear out the pantry, it remains our go-to comfort meal that transforms simple, everyday vegetables into a vibrant feast.",
+        "category": "Vegetarian"
     },
     {
         "id": "yangnyeom-chicken",
@@ -549,7 +555,9 @@
             "Second fry (the secret): Raise oil temperature to 190°C (375°F). Return chicken and fry again for 2-3 minutes until shatteringly crispy and deep golden brown.",
             "Immediately toss hot chicken in the sauce. Every piece must be coated — work quickly as the sauce caramelizes on the hot chicken creating an even better texture.",
             "Serve immediately with pickled radish (chikin-mu) on the side — the coolness cuts the richness perfectly. Ice cold beer recommended."
-        ]
+        ],
+        "storytelling": "Whenever there's a big sports match or a late-night craving, Yangnyeom Chicken is our national companion. The sticky, sweet, and spicy crunch pairs perfectly with a cold beer or soda, defining the iconic Korean 'Chimaek' culture.",
+        "category": "Meat"
     },
     {
         "id": "japchae",
@@ -700,7 +708,9 @@
             "In the large pan over medium heat, combine noodles with the master sauce. Toss for 2 minutes until noodles are evenly coated.",
             "Add all vegetables and beef back to the pan. Toss everything together gently — you want a harmonious mix, not mush. Taste and adjust sweetness or salt.",
             "Serve in a large bowl, garnished with sesame seeds and a few strips of egg jidan (thin egg omelet) if desired. Japchae is excellent at room temperature and even better the next day."
-        ]
+        ],
+        "storytelling": "Japchae is the centerpiece of every Korean feast. The slippery, slightly sweet potato noodles represent longevity and happiness, making it an essential, memory-filled dish for birthdays and joyous family milestones.",
+        "category": "Side Dish"
     },
     {
         "id": "dakbokkeumtang",
@@ -849,7 +859,9 @@
             "Remove the lid, add green onion, and continue cooking uncovered for 10-15 minutes, occasionally spooning the sauce over the chicken until it thickens and glazes.",
             "Finish with sesame oil off the heat. Taste and adjust — add sugar if too spicy, add soy sauce if too bland.",
             "Serve in the pot or transfer to a large bowl. Eat with steamed rice, using the sauce as a gravy."
-        ]
+        ],
+        "storytelling": "This hearty, spicy chicken stew is the quintessential 'bap-doduk' (rice thief). We love scooping the fiery, rich potato broth over a warm bowl of rice, a simple yet profound joy deeply ingrained in local dining traditions.",
+        "category": "Meat"
     },
     {
         "id": "chadol-doenjang-jjigae",
@@ -974,7 +986,9 @@
             "Gently add cubed tofu. Do not stir vigorously. Let it heat through for 3 minutes.",
             "Add sliced green chili in the last minute of cooking. Taste the broth — it should be savory, slightly earthy, and a touch salty.",
             "Serve immediately in the cooking pot if using earthenware (it stays hot). Eat with steamed rice and multiple side dishes (banchan)."
-        ]
+        ],
+        "storytelling": "Doenjang Jjigae is the aromatic heartbeat of a Korean kitchen. The deeply earthy scent of fermented soybean paste bubbling on the stove is nostalgic, representing the rustic, time-honored wisdom of our ancestors.",
+        "category": "Meat"
     },
     {
         "id": "gochujang-samgyeopsal",
@@ -1099,7 +1113,9 @@
             "Grill each slice for 2-3 minutes per side without moving. Resist the urge to flip early — the caramelization of the sugar in the marinade needs time to form a proper crust.",
             "Prepare the ssam (wrap) station: arrange lettuce, perilla, steamed rice, garlic cloves, and ssamjang (or additional gochujang) on the table.",
             "To eat: place a piece of pork in a leaf, add a small spoonful of rice, a slice of raw garlic, and a tiny bit of sauce. Fold the leaf into a bundle and eat in one bite."
-        ]
+        ],
+        "storytelling": "Grilling Gochujang Samgyeopsal at home brings the lively energy of a Korean BBQ tent indoors. The sizzling sound and the sweet, fiery chili glaze caramelizing over the pork instantly lift our spirits on a gloomy evening.",
+        "category": "Meat"
     },
     {
         "id": "kkanpunggi",
@@ -1225,7 +1241,9 @@
             "Pour in the sauce mixture. Let it bubble and reduce for 1 minute.",
             "Immediately add fried chicken and toss quickly — 30 seconds maximum. You want the sauce to coat the chicken without making it soggy.",
             "Finish with sesame oil. Serve immediately on a large platter with pickled radish cubes."
-        ]
+        ],
+        "storytelling": "Kkanpunggi perfectly captures our love for Korean-Chinese fusion. With its garlicky, sweet-and-sour crunch, it’s the ultimate weekend treat that brings families together for a casual, laughter-filled dining experience.",
+        "category": "Meat"
     },
     {
         "id": "galbi-jjim",
@@ -1362,7 +1380,9 @@
             "Bring to a boil, then cover and simmer on low heat for 2 hours. Check occasionally and skim any foam from the surface.",
             "Remove lid for the final 20-30 minutes to reduce the sauce until thick and glossy. Gently coat the ribs by spooning the sauce over them.",
             "Serve on a large platter. The meat should gently slide off the bone when nudged. Garnish with sesame seeds and sliced egg strips (jidan)."
-        ]
+        ],
+        "storytelling": "Galbi Jjim is the ultimate labor of love. We only prepare these tender, sweet-braised short ribs for the most honored guests and major holidays like Chuseok, symbolizing deep respect, warmth, and family devotion.",
+        "category": "Meat"
     },
     {
         "id": "jeyuk-bokkeum",
@@ -1511,7 +1531,9 @@
             "Add sliced onion. Now stir-fry everything together over maximum heat for 3-4 minutes until pork is cooked through with charred edges.",
             "Add green onion in the last 30 seconds and toss quickly.",
             "Taste and adjust: needs more heat? Add gochugaru. Too spicy? A drizzle of honey balances it. Serve immediately over steamed rice with kimchi and sliced cucumber on the side."
-        ]
+        ],
+        "storytelling": "Jeyuk Bokkeum is the comforting star of neighborhood diners (bunsikjip) across Korea. The fiery, smoky pork belly stir-fry is a nostalgic worker’s lunch, providing a spicy, energizing kick to power through a busy day.",
+        "category": "Meat"
     },
     {
         "id": "samgyetang",
@@ -1624,7 +1646,9 @@
             "Bring to a boil, skimming all foam from the surface meticulously. Foam equals impurities — remove it all for a clean, rich broth.",
             "Reduce heat to medium-low. Simmer covered for 1.5 to 2 hours until the broth is milky and the meat falls off the bone.",
             "Carefully remove the chicken to a large bowl. Season the broth with salt to taste. Ladle the broth into individual bowls, add pieces of chicken, and serve with a small dish of sea salt and black pepper on the side for dipping."
-        ]
+        ],
+        "storytelling": "Following the concept of 'I-yeol-chi-yeol' (fighting heat with heat), we eat this bubbling ginseng chicken soup on the hottest summer days. The rich, herbal broth recharges our exhausted bodies and restores vital inner energy.",
+        "category": "Meat"
     },
     {
         "id": "dakgomtang",
@@ -1737,7 +1761,9 @@
             "Remove chicken. Strain the broth through a fine mesh strainer. Discard garlic and ginger. Season broth with salt to taste.",
             "Shred chicken meat from the bones into bite-sized pieces. Discard bones.",
             "Cook noodles separately according to package instructions. Drain and place in soup bowls. Ladle hot broth over noodles, add shredded chicken, and finish with sliced green onion and a pinch of black pepper."
-        ]
+        ],
+        "storytelling": "Dakgomtang is our humble, soul-soothing remedy for winter chills and common colds. The deeply simmered, clear chicken broth offers pure, unadulterated comfort that feels like a warm embrace from a caring grandmother.",
+        "category": "Meat"
     },
     {
         "id": "garlic-pickle",
@@ -1826,7 +1852,9 @@
             "Pour the cooled soy brine over the garlic. Seal the jar and refrigerate.",
             "Wait a minimum of 1 week (2 weeks is ideal). The garlic will turn light brown and mellow.",
             "Serve as a banchan alongside any Korean meal. The leftover soy brine is liquid gold — use it to marinate meats, season stir-fries, or drizzle over rice. Keeps refrigerated for 3+ months."
-        ]
+        ],
+        "storytelling": "Manul Jangajji is a testament to the Korean patience of fermentation. These soy-pickled garlic cloves add a bright, tangy crunch to rich meats, silently supporting the main dish like an unsung hero of our dining tables.",
+        "category": "Side Dish"
     },
     {
         "id": "jang-susam",
@@ -1939,7 +1967,9 @@
             "Increase heat to medium-high for the last 5 minutes, stirring constantly to fully reduce the sauce into a thick glaze that coats everything.",
             "Finish with sesame oil. Remove from heat and let cool.",
             "Store in an airtight container in the refrigerator for up to 1 week. Serve cold or at room temperature as a banchan. Slice the beef thin against the grain for serving."
-        ]
+        ],
+        "storytelling": "Jang-Jorim is the quintessential 'banchan' (side dish) of childhood lunchboxes. The sweet, soy-braised beef and quail eggs carry a profound sense of maternal love, meant to provide lasting nourishment and energy.",
+        "category": "Side Dish"
     },
     {
         "id": "aukguk",
@@ -2073,7 +2103,9 @@
             "Pour in the broth and bring to a boil; stir in the soybean paste, soy sauce, and blanched mallow leaves.",
             "Add perilla powder and chopped leeks, then simmer for a few more minutes to meld the flavors."
         ],
-        "image": "/images/aukguk.png"
+        "image": "/images/aukguk.png",
+        "storytelling": "There is an old Korean saying: 'Auk soup is so delicious you’d latch the door to eat it alone.' This deeply earthy mallow soup connects us to our agrarian roots and the rustic, comforting flavors of the Korean countryside.",
+        "category": "Vegetarian"
     },
     {
         "id": "oyster-soft-tofu-stew",
@@ -2231,7 +2263,9 @@
             "Add the soft tofu and fresh oysters to the boiling broth along with the prepared seasoning paste.",
             "Crack an egg on top and add chopped green onions just before serving while the stew is still bubbling."
         ],
-        "image": "/images/oyster_soft_tofu_stew.png"
+        "image": "/images/oyster_soft_tofu_stew.png",
+        "storytelling": "A bubbling bowl of Gul Sundubu-jjigae feels like a warm hug on a freezing winter day. The velvety tofu and briny oysters evoke nostalgic memories of lively coastal fish markets and the comforting heat of a busy diner.",
+        "category": "Seafood"
     },
     {
         "id": "spicy-chili-steamed",
@@ -2365,7 +2399,9 @@
             "Add the sauce mixture containing water, plum extract, and fish sauce, then braise until the liquid is mostly reduced.",
             "Add the toasted anchovies and finish with a drizzle of sesame oil and a sprinkle of sesame seeds."
         ],
-        "image": "/images/spicy_chili_steamed.png"
+        "image": "/images/spicy_chili_steamed.png",
+        "storytelling": "Maeun Gochu-jjim showcases the brilliant Korean technique of softening fierce heat through steaming. Coated in savory flour, these steamed chilies offer a nostalgic, rustic flavor that reminds us of rural summer harvests.",
+        "category": "Side Dish"
     },
     {
         "id": "oyster-soup-rice",
@@ -2511,7 +2547,9 @@
             "Add the fresh oysters and season with soup soy sauce, minced garlic, and salted shrimp.",
             "Serve the hot soup in a bowl over a bed of rice, topped with a raw egg and seaweed flakes."
         ],
-        "image": "/images/oyster_soup_rice.png"
+        "image": "/images/oyster_soup_rice.png",
+        "storytelling": "Gul-gukbap is the ultimate winter coastal comfort food. The milky, briny oyster broth swimming with soft rice is a restorative meal that Koreans actively seek out to warm their bones and cure a heavy hangover.",
+        "category": "Seafood"
     },
     {
         "id": "pork-backbone-stew",
@@ -2705,7 +2743,9 @@
             "Place the cooked bones, potatoes, and carrots into a large pan with the sauce and simmer for 20 minutes.",
             "Add mushrooms, onions, and peppers, then continue to braise until the sauce has thickened into a glossy glaze."
         ],
-        "image": "/images/pork_backbone_stew.png"
+        "image": "/images/pork_backbone_stew.png",
+        "storytelling": "Deung-ppyeo-jjim is a rustic, deeply savory feast shared among close friends. Tearing the tender meat off massive pork bones with your hands embodies a convivial, unpretentious dining culture cherished across Korea.",
+        "category": "Meat"
     },
     {
         "id": "kimchi-bokkeumbap",
@@ -2854,7 +2894,9 @@
             "Add the cold rice and the prepared kimchi mixture. Stir-fry aggressively, pressing the rice flat against the pan in intervals to create slightly crispy bits.",
             "Add the chopped green onion and toss briefly, just 30 seconds. Finish with a drizzle of sesame oil off the heat.",
             "In a separate small pan, fry eggs sunny-side up. The yolk must stay runny. Plate the fried rice and top each serving with one egg. Break the yolk at the table — it becomes a luxurious sauce."
-        ]
+        ],
+        "storytelling": "Kimchi Fried Rice is our ultimate quick-fix comfort food. Frying well-fermented, sour kimchi with leftover rice and capping it with a crispy fried egg brings instant joy and nostalgic memories of simple childhood meals.",
+        "category": "Vegetarian"
     },
     {
         "id": "gungmul-tteokbokki",
@@ -3003,7 +3045,9 @@
             "Boil for 8-10 minutes, stirring constantly to prevent the rice cakes from sticking to the bottom. They are ready when completely soft and chewy throughout.",
             "Add cabbage and green onions. Cook 2 more minutes until the cabbage just wilts.",
             "The broth should be glossy and thick. If too thin, boil uncovered 3-5 more minutes. Serve immediately in the pan — tteokbokki waits for no one."
-        ]
+        ],
+        "storytelling": "Tteokbokki is the undisputed king of Korean street food. We fondly remember standing by outdoor stalls, dipping fried snacks into the fiery, sweet, and soupy broth, a taste deeply woven into our schoolyard memories.",
+        "category": "Side Dish"
     },
     {
         "id": "dubu-jorim",
@@ -3164,7 +3208,9 @@
             "Carefully place the seared tofu back into the sauce. Braise over medium heat for 5 minutes, occasionally spooning sauce over the top of each piece.",
             "Drizzle perilla oil (or sesame oil) over the top. The sauce should be thick and coating the tofu pieces in a glossy glaze.",
             "Serve as a banchan (side dish) with steamed rice. The sauce is incredible poured over white rice — make extra."
-        ]
+        ],
+        "storytelling": "Dubu Jorim transforms simple tofu into a deeply flavorful, spicy delight. This everyday side dish is a staple of modest home-cooked meals, carrying the reliable, comforting essence of a classic Korean dinner table.",
+        "category": "Side Dish"
     },
     {
         "id": "algamja-jorim",
@@ -3289,7 +3335,9 @@
             "The potatoes are done when the sauce has reduced to a thick, sticky glaze that coats every potato. Remove from heat.",
             "Add the sliced chilies and drizzle sesame oil over the top. Toss gently — the residual heat will soften the chilies.",
             "Serve at room temperature as a banchan (side dish). Al-gamja Jorim actually improves with time and is excellent the next day as the flavors deepen."
-        ]
+        ],
+        "storytelling": "These sweet, soy-glazed baby potatoes are a delightfully sticky lunchbox favorite. The wrinkled, chewy skin contrasting with the soft interior always brings back fond, nostalgic memories of school lunches and picnics.",
+        "category": "Side Dish"
     },
     {
         "id": "cheonggukjang-jjigae",
@@ -3426,7 +3474,9 @@
             "Simmer gently for 5-7 minutes. Add the green onion in the last 2 minutes of cooking.",
             "Taste the broth — it should be intensely savory, complex, and deeply earthy. Adjust: more doenjang for depth, more gochugaru for heat.",
             "Serve immediately in the earthenware pot at the table if possible — cheonggukjang jjigae must be eaten piping hot with steamed rice. Warn newcomers that the aroma is bold but the flavor is extraordinary."
-        ]
+        ],
+        "storytelling": "Cheonggukjang is the deeply pungent, deeply beloved soul food of older generations. Its profoundly earthy, fermented aroma might be strong, but the rich, rustic taste instantly transports us to the warmth of a country farmhouse.",
+        "category": "Vegetarian"
     },
     {
         "id": "gochu-basasak-chicken",
@@ -3617,7 +3667,9 @@
             "Make the Marbling Sauce: Whisk together 4 tbsp mayonnaise + 2 tbsp sriracha + 1 tbsp oligodang (or honey). Mix until smooth and creamy. Taste — adjust to your preference: more mayo for milder, more sriracha for spicier.",
             "Make the Goblin Sauce: Combine 2 tbsp mayonnaise + 2 tbsp sriracha + 1 tbsp oligodang + 2 tbsp buldak hot sauce + 1 tsp gochugaru. Mix well. This sauce is significantly spicier and more complex — not for the faint of heart.",
             "Serve the crispy chicken immediately on a platter with both sauces in separate dipping bowls. Pickled radish (chikin-mu) on the side cuts the richness perfectly. The crust stays crispy for 15 minutes — eat fast!"
-        ]
+        ],
+        "storytelling": "This isn't just fried chicken; it's a modern Korean weekend ritual. The spicy, oven-baked crunch paired with creamy, tangy dipping sauces represents the dynamic and ever-evolving landscape of our beloved 'Chimaek' culture.",
+        "category": "Meat"
     },
     {
         "id": "gimbap",
@@ -3772,7 +3824,9 @@
             "Roll firmly: Using the mat, lift the bottom edge of the gim and roll it over the fillings, pressing firmly and squeezing to shape a tight cylinder. Roll forward to seal with the bare strip at the top. The roll must be firm and tight — apply even pressure along the entire length as you roll.",
             "Lightly brush the outside of the roll with sesame oil for shine and flavor. Let rest seam-side down for 2 minutes before cutting.",
             "Cut with a single sharp downward stroke — no sawing. Wipe the knife with a sesame oil cloth between each cut. Cut into 8 pieces. Serve immediately or pack for lunch — gimbap holds well for 4-6 hours at room temperature."
-        ]
+        ],
+        "storytelling": "Gimbap is the taste of a Korean childhood picnic. Neatly rolled with diverse, colorful ingredients, each slice carries the meticulous love and early-morning efforts of mothers preparing special lunchboxes for school field trips.",
+        "category": "Side Dish"
     },
     {
         "id": "haemul-pajeon",
@@ -3915,7 +3969,9 @@
             "Cook undisturbed for 4-5 minutes until the bottom is deep golden and the edges are crispy. Use a spatula to peek — do not flip until the bottom is properly golden.",
             "Flip carefully — use two spatulas for confidence. Drizzle remaining oil around the edges again. Press firmly with a spatula to ensure the entire bottom surface contacts the pan. Cook 3-4 more minutes until deeply golden.",
             "Optionally flip once more for 30 seconds for an even more caramelized bottom. Slice like a pizza — into wedges — directly in the pan. Serve with dipping sauce. It must be eaten hot for maximum crispiness."
-        ]
+        ],
+        "storytelling": "Whenever it rains in Korea, we instinctively crave Pajeon and Makgeolli. The sizzling sound of the pancake mimics raindrops hitting the pavement, making it our absolute favorite comfort food for a cozy, gloomy afternoon.",
+        "category": "Seafood"
     },
     {
         "id": "sundubu-jjigae-classic",
@@ -4064,7 +4120,9 @@
             "Taste the broth and adjust seasoning: more gochugaru for heat and color, a pinch of salt if needed. The broth should be strongly savory and spicy.",
             "Scatter sliced green onion on top. Crack the raw egg directly into the center of the stew at the table — the residual heat from the boiling stone pot will gently cook the white while keeping the yolk runny.",
             "Serve immediately, still bubbling, directly in the stone pot alongside steamed rice. The correct way to eat: break the egg yolk, mix the runny yolk into the stew, then eat the tofu and protein with spoonfuls of the broth over rice."
-        ]
+        ],
+        "storytelling": "A fiery, bubbling bowl of Classic Sundubu is the ultimate remedy for a tired soul. Cracking a raw egg into the boiling, spicy red broth at the table is a beloved ritual that perfectly defines our everyday dining joy.",
+        "category": "Seafood"
     },
     {
         "id": "samgyeopsal",
@@ -4219,7 +4277,9 @@
             "Build the ssam (wrap): Hold a lettuce leaf in your palm. Add a piece of pork belly, a grilled garlic clove, a slice of kimchi, a sliced green pepper, and a small dollop of ssamjang.",
             "Fold the lettuce around everything and eat in one bold bite — a ssam is never eaten in two bites. The combination of hot, fatty pork + cool lettuce + pungent ssamjang + acid from kimchi is extraordinary.",
             "Keep grilling and wrapping throughout the meal — samgyeopsal is eaten continuously over 30-45 minutes. Order extra pork belly. Always."
-        ]
+        ],
+        "storytelling": "Samgyeopsal is the undeniable centerpiece of Korean social life. Gathering around a sizzling grill, wrapping pork in lettuce, and clinking Soju glasses is how we celebrate, bond, and wash away the stress of the day.",
+        "category": "Meat"
     },
     {
         "id": "kkaennip-jangajji",
@@ -4379,7 +4439,9 @@
             "Carefully squeeze out the excess pickling liquid from the leaves back into a bowl.",
             "Mix the remaining seasonings (minced chili, garlic, ginger, scallions, gochugaru, syrup, sesame seeds) into the leftover pickling liquid to create a paste.",
             "Spread about a teaspoon of the seasoning paste between every five leaves. Cover and let it age in the refrigerator for 1-2 days before serving."
-        ]
+        ],
+        "storytelling": "Kkaennip Jangajji is the ultimate 'rice thief' of the Korean summer. Peeling apart the fragrant, soy-soaked perilla leaves reminds us of communal family meals where everyone helps each other separate the delicate, sticky layers.",
+        "category": "Side Dish"
     },
     {
         "id": "gochujang-yukhoe",
@@ -4540,7 +4602,9 @@
             "Add the beef strips to the bowl and gently toss until evenly coated with the gochujang sauce. Do this right before serving to maintain texture.",
             "Place the seasoned beef neatly on top of the pear matchsticks.",
             "Create a small indentation in the center of the beef and gently place the raw egg yolk. Break the yolk and mix right before eating."
-        ]
+        ],
+        "storytelling": "Gochujang Yukhoe is a luxurious interplay of textures and temperatures. The chilled, fiery-sweet beef mixing with the rich egg yolk creates an elegant, festive dish that we eagerly anticipate at traditional banquets.",
+        "category": "Meat"
     },
     {
         "id": "nabak-kimchi",
@@ -4653,7 +4717,9 @@
             "Do not rinse the salted vegetables. Pour the combined aromatic broth directly over them in a large container.",
             "Slice the scallions, garlic, ginger, and chilies thinly and add them to the broth.",
             "Leave the container at room temperature for 1 full day to kickstart fermentation (it should smell slightly tangy), then move it to the refrigerator. Serve chilled."
-        ]
+        ],
+        "storytelling": "Nabak Kimchi is the refreshing palate cleanser of our festive feasts. The cold, tangy, pinkish broth effortlessly cuts through the richness of heavy holiday meats, offering a clean, crisp sip of vibrant Korean fermentation.",
+        "category": "Side Dish"
     },
     {
         "id": "minari-jangajji",
@@ -4735,7 +4801,9 @@
             "Carefully pour the boiling hot brine directly over the cut stems. The hot liquid flash-cooks the stems slightly while preserving their crunch.",
             "Let the jar sit at room temperature until fully cooled.",
             "Seal and store in the refrigerator. The pickles are ready to eat after 1 to 2 days."
-        ]
+        ],
+        "storytelling": "Minari Jangajji is the crisp, herbal harbinger of spring. The bright, cleansing crunch of the pickled water dropwort perfectly balances rich BBQ meats, embodying our deep appreciation for seasonal, medicinal foraging.",
+        "category": "Side Dish"
     },
     {
         "id": "nurungji-baeksuk",
@@ -4850,6 +4918,8 @@
             "Cook on high pressure/heat until boiling, then lower to a simmer. In a pressure cooker, this takes about 40 minutes. In a regular pot, about 1.5 hours.",
             "Once the chicken is tender, continue cooking uncovered on medium heat until the water reduces and the rice at the bottom fries in the chicken fat, forming a golden, crispy 'nurungji' (scorched) layer (about 10-15 mins). Watch closely so it doesn't burn.",
             "Serve immediately by scooping the tender chicken along with chunks of the crispy, nutty rice. Serve salt and pepper on the side for dipping the meat."
-        ]
+        ],
+        "storytelling": "In Korea, we enjoy Baeksuk to fight the sweltering summer heat. After eating this steaming dish, you will find yourself sweating, but feeling a strange, refreshing inner warmth that completely recharges your exhausted soul.",
+        "category": "Meat"
     }
 ]

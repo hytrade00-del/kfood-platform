@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps, react-hooks/set-state-in-effect, no-unused-vars */
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
 import {
   Users,
   Scale,
@@ -22,7 +22,8 @@ import {
   Tag,
   ArrowRightLeft,
   DollarSign,
-  ArrowLeft
+  ArrowLeft,
+  ChevronDown
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import recipesData from './data/recipes.json';
@@ -73,6 +74,19 @@ const App = () => {
   const [email, setEmail] = useState("");
   const [showContact, setShowContact] = useState(false);
   const [showCookieBanner, setShowCookieBanner] = useState(false);
+  const [showRecipeDropdown, setShowRecipeDropdown] = useState(false);
+  const recipeDropdownRef = useRef(null);
+
+  // Close dropdown on outside click
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (recipeDropdownRef.current && !recipeDropdownRef.current.contains(e.target)) {
+        setShowRecipeDropdown(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   useEffect(() => {
     const consent = localStorage.getItem('kfood_cookie_consent');
@@ -292,9 +306,58 @@ const App = () => {
                 🍳 K-FOOD GLOBAL
               </a>
               <nav className="main-nav">
-                <button className={activeTab === 'recipes' ? 'active' : ''} onClick={() => { setActiveTab('recipes'); setSelectedRecipeId(""); window.history.pushState(null, '', '/'); }}>Recipes</button>
-                <button className={activeTab === 'substitutes' ? 'active' : ''} onClick={() => { setActiveTab('substitutes'); setSelectedRecipeId(""); window.history.pushState(null, '', '/substitutes'); }}>Substitutes Board</button>
-                <button className={activeTab === 'about' ? 'active' : ''} onClick={() => { setActiveTab('about'); setSelectedRecipeId(""); window.history.pushState(null, '', '/about'); }}>About</button>
+                <div className="nav-dropdown-wrapper" ref={recipeDropdownRef} style={{ position: 'relative' }}>
+                  <button
+                    className={activeTab === 'recipes' ? 'active' : ''}
+                    onClick={() => setShowRecipeDropdown(prev => !prev)}
+                    style={{ display: 'flex', alignItems: 'center', gap: '4px' }}
+                  >
+                    Recipes <ChevronDown size={14} style={{ transform: showRecipeDropdown ? 'rotate(180deg)' : 'rotate(0)', transition: 'transform 0.2s' }} />
+                  </button>
+                  <AnimatePresence>
+                    {showRecipeDropdown && (
+                      <motion.div
+                        initial={{ opacity: 0, y: -8 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -8 }}
+                        transition={{ duration: 0.18 }}
+                        className="recipe-dropdown"
+                        style={{
+                          position: 'absolute', top: 'calc(100% + 8px)', left: '0',
+                          background: 'white', borderRadius: '14px', boxShadow: '0 8px 30px rgba(0,0,0,0.15)',
+                          padding: '8px 0', minWidth: '180px', zIndex: 1000,
+                          border: '1px solid rgba(0,0,0,0.06)'
+                        }}
+                      >
+                        {["All", "Meat", "Seafood", "Vegetarian", "Side Dish"].map(cat => (
+                          <button
+                            key={cat}
+                            onClick={() => {
+                              setSelectedCategory(cat);
+                              setActiveTab('recipes');
+                              setSelectedRecipeId("");
+                              setShowRecipeDropdown(false);
+                              window.history.pushState(null, '', '/');
+                            }}
+                            style={{
+                              display: 'block', width: '100%', textAlign: 'left',
+                              padding: '10px 20px', border: 'none', background: selectedCategory === cat ? 'var(--primary)' : 'transparent',
+                              color: selectedCategory === cat ? 'white' : '#333',
+                              cursor: 'pointer', fontWeight: selectedCategory === cat ? '700' : '500',
+                              fontSize: '0.92rem', transition: 'all 0.15s', borderRadius: '0'
+                            }}
+                            onMouseEnter={(e) => { if (selectedCategory !== cat) { e.target.style.background = '#f8f8f8'; } }}
+                            onMouseLeave={(e) => { if (selectedCategory !== cat) { e.target.style.background = 'transparent'; } }}
+                          >
+                            {cat === 'All' ? '🍽️ All Recipes' : cat === 'Meat' ? '🥩 Meat' : cat === 'Seafood' ? '🦐 Seafood' : cat === 'Vegetarian' ? '🥬 Vegetarian' : '🥗 Side Dish'}
+                          </button>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+                <button className={activeTab === 'substitutes' ? 'active' : ''} onClick={() => { setActiveTab('substitutes'); setSelectedRecipeId(""); setShowRecipeDropdown(false); window.history.pushState(null, '', '/substitutes'); }}>Substitutes Board</button>
+                <button className={activeTab === 'about' ? 'active' : ''} onClick={() => { setActiveTab('about'); setSelectedRecipeId(""); setShowRecipeDropdown(false); window.history.pushState(null, '', '/about'); }}>About</button>
               </nav>
             </div>
           </div>
@@ -323,27 +386,23 @@ const App = () => {
               <section className="catalog-section" style={{ padding: '4rem 0' }}>
                 <h1 className="section-title" style={{ fontSize: '2.5rem', marginBottom: '2rem', textAlign: 'center' }}>Explore Our Premium Recipes</h1>
                 
-                <div className="category-filters" style={{ display: 'flex', justifyContent: 'center', gap: '0.8rem', flexWrap: 'wrap', marginBottom: '3rem' }}>
-                  {["All", "Meat", "Seafood", "Vegetarian", "Side Dish"].map(cat => (
-                    <button 
-                      key={cat}
-                      onClick={() => setSelectedCategory(cat)}
-                      style={{
-                        padding: '10px 20px',
-                        borderRadius: '30px',
-                        border: 'none',
-                        cursor: 'pointer',
-                        fontWeight: '600',
-                        backgroundColor: selectedCategory === cat ? 'var(--primary)' : '#f1f5f9',
-                        color: selectedCategory === cat ? 'white' : '#444',
-                        transition: 'all 0.2s',
-                        boxShadow: selectedCategory === cat ? '0 4px 10px rgba(220, 38, 38, 0.3)' : 'none'
-                      }}
-                    >
-                      {cat}
-                    </button>
-                  ))}
-                </div>
+                {selectedCategory !== 'All' && (
+                  <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '2rem' }}>
+                    <span style={{
+                      display: 'inline-flex', alignItems: 'center', gap: '8px',
+                      padding: '8px 20px', borderRadius: '30px',
+                      background: 'var(--primary)', color: 'white',
+                      fontWeight: '700', fontSize: '0.95rem'
+                    }}>
+                      {selectedCategory === 'Meat' ? '🥩' : selectedCategory === 'Seafood' ? '🦐' : selectedCategory === 'Vegetarian' ? '🥬' : '🥗'} {selectedCategory}
+                      <button onClick={() => setSelectedCategory('All')} style={{
+                        background: 'rgba(255,255,255,0.3)', border: 'none', color: 'white',
+                        borderRadius: '50%', width: '22px', height: '22px', cursor: 'pointer',
+                        display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', fontSize: '14px'
+                      }}>×</button>
+                    </span>
+                  </div>
+                )}
 
                 <div className="recipe-catalog-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '2rem' }}>
                   {filteredRecipes.map(r => (
@@ -373,7 +432,7 @@ const App = () => {
                           <ChevronRight size={20} />
                         </div>
                       </div>
-                    </div>
+                    </motion.div>
                   ))}
                 </div>
               </section>
@@ -441,10 +500,36 @@ const App = () => {
                       </div>
                     ))}
                   </div>
+
+                  {/* Substitute Explanation Section for AdSense 'Thin Content' fix */}
+                  {recipe.substituteExplanation && (
+                    <div style={{ background: '#f8fafc', padding: '1.5rem', borderRadius: '15px', marginTop: '1.5rem', border: '1px solid #e2e8f0' }}>
+                      <h3 style={{ fontSize: '1.2rem', marginBottom: '0.8rem', color: '#334155', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                        💡 Why These Substitutes Work
+                      </h3>
+                      <p style={{ lineHeight: 1.7, color: '#475569', margin: 0 }}>
+                        {recipe.substituteExplanation}
+                      </p>
+                    </div>
+                  )}
                 </section>
 
+                {/* Cultural Context Section for AdSense 'Thin Content' fix */}
+                  {recipe.culturalContext && (
+                    <section id="culture" style={{ marginTop: '3rem' }}>
+                      <div style={{ background: '#fffaf0', padding: '2rem', borderRadius: '15px', borderLeft: '4px solid var(--primary)', marginBottom: '2rem' }}>
+                        <h2 className="section-title" style={{ fontSize: '1.5rem', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                          🇰🇷 Chef's Notes & Cultural Context
+                        </h2>
+                        <p style={{ lineHeight: 1.8, color: '#444', fontSize: '1.05rem', margin: 0 }}>
+                          {recipe.culturalContext}
+                        </p>
+                      </div>
+                    </section>
+                  )}
+
                 <section id="tools">
-                  <h2 className="section-title"><Wrench color="var(--primary)" /> Kitchen Tools hack</h2>
+                  <h2 className="section-title"><ShoppingCart color="var(--primary)" /> Ingredients Hack</h2>
                   <div className="tools-grid">
                     {recipe.tools?.map((tool, idx) => (
                       <div key={idx} className="tool-card">
@@ -709,13 +794,28 @@ const App = () => {
                 We use cookies to personalize content and ads, provide social media features, and analyze our traffic. We also share information with our advertising and analytics partners.
                 <a href="/privacy" onClick={(e) => { e.preventDefault(); setActiveTab('privacy'); window.history.pushState(null, '', '/privacy'); }} style={{ color: '#f9ca24', marginLeft: '10px', textDecoration: 'underline', fontWeight: 600 }}>Learn more</a>
               </p>
-              <button 
-                onClick={() => { localStorage.setItem('kfood_cookie_consent', 'true'); setShowCookieBanner(false); }} 
-                className="signup-btn" 
-                style={{ background: 'var(--primary)', flexShrink: 0 }}
-              >
-                Accept All Cookies
-              </button>
+              <div style={{ display: 'flex', gap: '10px', flexShrink: 0 }}>
+                <button 
+                  onClick={() => { localStorage.setItem('kfood_cookie_consent', 'false'); setShowCookieBanner(false); }} 
+                  style={{ 
+                    background: 'transparent', 
+                    border: '1px solid #fff', 
+                    color: 'white',
+                    padding: '10px 20px',
+                    borderRadius: '30px',
+                    cursor: 'pointer',
+                    fontWeight: '700'
+                  }}
+                >
+                  Decline
+                </button>
+                <button 
+                  onClick={() => { localStorage.setItem('kfood_cookie_consent', 'true'); setShowCookieBanner(false); }} 
+                  className="signup-btn" 
+                >
+                  Accept All Cookies
+                </button>
+              </div>
             </div>
           </motion.div>
         )}

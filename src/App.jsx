@@ -426,7 +426,7 @@ const App = () => {
                           </div>
                         )}
                         <h3 style={{ fontSize: '1.4rem', marginBottom: '0.5rem' }}>{r.title}</h3>
-                        <p style={{ color: '#666', fontSize: '0.9rem', marginBottom: '1rem' }}>{r.description}</p>
+                        <p style={{ color: '#666', fontSize: '0.9rem', marginBottom: '1rem' }}>{r.description?.split('. ').slice(-3).join('. ') || r.description}</p>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', color: 'var(--primary)', fontWeight: 700 }}>
                           <span>{r.difficulty} • {r.cookTime}</span>
                           <ChevronRight size={20} />
@@ -460,6 +460,64 @@ const App = () => {
                     <img src={recipe.image} alt={recipe.title} className="hero-img" />
                   </motion.div>
                 </section>
+
+                {/* ===== THE SUBSTITUTE AESTHETIC BANNER ===== */}
+                {(() => {
+                  const keySwaps = recipe.ingredients
+                    ?.filter(i => i.substitute && i.category === 'Korean Mart')
+                    .slice(0, 3);
+                  if (!keySwaps || keySwaps.length === 0) return null;
+                  return (
+                    <motion.section
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 0.2 }}
+                      id="substitute-aesthetic"
+                      style={{
+                        background: 'linear-gradient(135deg, #fff7ed 0%, #fef3c7 100%)',
+                        border: '2px solid #fb923c',
+                        borderRadius: '20px',
+                        padding: '2rem 2rem 1.5rem',
+                        marginBottom: '0.5rem'
+                      }}
+                    >
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '1rem' }}>
+                        <ArrowRightLeft size={22} color="#ea580c" />
+                        <h2 style={{ fontSize: '1.2rem', fontWeight: 800, color: '#9a3412', margin: 0 }}>
+                          🌍 The Global Kitchen Hack — Cook This Anywhere
+                        </h2>
+                      </div>
+                      <p style={{ fontSize: '0.95rem', color: '#7c2d12', lineHeight: 1.7, marginBottom: '1.2rem', fontStyle: 'italic' }}>
+                        No Korean mart nearby? No problem. Here are the key specialty ingredients in this recipe and exactly what to grab from your local supermarket instead:
+                      </p>
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                        {keySwaps.map((ing, i) => (
+                          <div key={i} style={{
+                            display: 'flex', alignItems: 'flex-start', gap: '12px',
+                            background: 'rgba(255,255,255,0.7)', borderRadius: '12px', padding: '12px 16px'
+                          }}>
+                            <span style={{ fontSize: '1.2rem', flexShrink: 0 }}>🔄</span>
+                            <div style={{ flex: 1 }}>
+                              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap', marginBottom: '4px' }}>
+                                <span style={{ fontWeight: 700, color: '#7c2d12', fontSize: '0.95rem' }}>{ing.name}</span>
+                                <span style={{ color: '#94a3b8', fontSize: '0.8rem' }}>→</span>
+                                <span style={{ fontWeight: 700, color: '#15803d', fontSize: '0.95rem' }}>{ing.substitute}</span>
+                                {ing.similarityScore && (
+                                  <span style={{ background: '#dcfce7', color: '#15803d', fontSize: '0.72rem', fontWeight: 700, padding: '2px 8px', borderRadius: '20px' }}>
+                                    {ing.similarityScore}% taste match
+                                  </span>
+                                )}
+                              </div>
+                              {ing.subReason && (
+                                <p style={{ margin: 0, fontSize: '0.83rem', color: '#78716c', lineHeight: 1.5 }}>{ing.subReason}</p>
+                              )}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </motion.section>
+                  );
+                })()}
 
                 <section className="utility-bar no-print">
                   <div className="utility-item">
